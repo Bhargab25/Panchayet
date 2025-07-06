@@ -2742,7 +2742,7 @@ padding-right: 20px;
 }
 .services-panel{
   padding: 50px 0;
-  background-image: url('../../images/lamp.png');
+  /* background-image: url('../../images/lamp.png'); */
   background-repeat: no-repeat;
   background-position: left top;
   .service-card{
