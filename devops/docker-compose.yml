@@ -4,7 +4,7 @@ services:
     ports:
       - "9484:443"
     volumes:
-      - /DEMO_WEB/code:/usr/share/caddy:ro
+      - /DEMO_WEB/app:/usr/share/caddy:ro
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - /SCM/ssl:/etc/caddy/certs:ro
     restart: unless-stopped
