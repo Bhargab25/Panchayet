@@ -27,7 +27,7 @@ pipeline {
 
                 # Copy new files with force overwrite
                 rm -rf  /DEMO_WEB/*
-                cp -rf code /DEMO_WEB/
+                cp -rf app /DEMO_WEB/
             '''
             }
         }
