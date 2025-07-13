@@ -17,7 +17,7 @@ pipeline {
             }
         }
 
-        stage('Copy to /DEM)_WEB') {
+        stage('Copy to /DEMO_WEB') {
             steps {
             sh '''
                 # Stop and remove existing docker-compose stack if it exists
