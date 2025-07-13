@@ -45,55 +45,54 @@
   object-fit: cover;
 }
 
-.scheme{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-
+.scheme {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 .scheme-item-a {
-    all: unset;
-    display: block;
+  all: unset;
+  display: block;
 }
 .scheme-item {
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 15px;
-    gap: 10px;
-    cursor: pointer;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  gap: 10px;
+  cursor: pointer;
 
-    a{
-        all: unset;
-    }
+  a {
+    all: unset;
+  }
 
-    img{
-      margin-right: auto;
-    }
+  img {
+    margin-right: auto;
+  }
 
-    p{
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        width: 80%;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
 
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 30px !important;
-    line-height: 1;
-    opacity: .75;
-    color: black !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 30px !important;
+  line-height: 1;
+  opacity: 0.75;
+  color: black !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flip-card {
@@ -103,7 +102,7 @@
   margin-block: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: .85rem;;
+  font-size: 0.85rem;
 }
 
 .flip-card-inner {
@@ -133,6 +132,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.flip-card-front h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.flip-next {
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .flip-card-front img {
@@ -147,8 +158,10 @@
   background: #f1f1f1;
 }
 
-
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   .banner {
     height: auto;
   }
@@ -164,8 +177,23 @@
     }
     p {
       width: 100%;
-      font-size: .75rem;
+      font-size: 0.75rem;
       margin-bottom: 0;
     }
+  }
+  .navbar-nav .nav-item {
+    border: 0;
+    border-radius: 0;
+    margin-right: 0;
+
+    a {
+      font-size: 1rem !important;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+    }
+  }
+  .navbar-nav .nav-item:hover {
+    background-color: #050d42;
+    color: white;
   }
 }
