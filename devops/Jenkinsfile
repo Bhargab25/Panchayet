@@ -17,12 +17,12 @@ pipeline {
             }
         }
 
-        stage('Copy to /KCA_WEB') {
+        stage('Copy to /DEM)_WEB') {
             steps {
             sh '''
                 # Stop and remove existing docker-compose stack if it exists
                 if [ -f /DEMO_WEB/devops/docker-compose.yml ]; then
-                docker compose -p panchayet -f /KCA_WEB/devops/docker-compose.yml down || true
+                docker compose -p panchayet -f /DEMO_WEB/devops/docker-compose.yml down || true
                 fi
 
                 # Copy new files with force overwrite
