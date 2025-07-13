@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freserganj Gram panchayat</title>
+    <!-- <link rel="stylesheet" href="css/fontawesome.min.css" /> -->
+    <link href="../css/ux4g-v1.0.1.css" rel="stylesheet" />
+    <link href="../css/html-template-1.css" rel="stylesheet" />
+    <link href="../css/accesibility-style_v1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <!-- <div class="loader">
+      <div class="loader-inner">
+        <img src="images/loader.gif" alt="loader" />
+      </div>
+    </div> -->
+
+    <header>
+      <div class="header-top px-2">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xl-6 col-lg-3 d-flex col-sm-6 col-7 align-items-left"
+            >
+              <span class="goi"
+                ><img
+                  src="https://doc.ux4g.gov.in/assets/img/icon/in-flag.png"
+                  class="img-fluid"
+                  alt="indian flag"
+                  loading="lazy"
+              /></span>
+            </div>
+            <div class="col-xl-6 col-lg-9 col-sm-6 col-5 text-end">
+              <span class="d-none d-md-inline">
+                <button
+                  role="button"
+                  id="btn-decrease"
+                  class="font01"
+                  onclick="decrease()"
+                >
+                  -A
+                </button>
+                <button
+                  role="button"
+                  id="btn-orig"
+                  class="font01 active01"
+                  onclick="reset()"
+                >
+                  A
+                </button>
+
+                <button
+                  role="button"
+                  id="btn-increase"
+                  class="font01"
+                  onclick="increase()"
+                >
+                  A+</button
+                >
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main manu -->
+      <div
+        id="header-sticky"
+        class="header-area shadow-sm header-white px-2 pt-2 pb-2 mt-sm-0"
+      >
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid pr-0 pl-0">
+              <!-- <a class="navbar-brand" href="#">
+                            <img src="images/logo.svg" alt="logo" loading="lazy">                            
+                        </a> -->
+              <a class="navbar-brand" href="#">
+                <!-- <img src="images/logo1.png" alt="logo"> -->
+                <h4>Freserganj Gram Panchayat</h4>
+              </a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"
+                      >Orders / Circulars</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">E Tender</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Contact Us</a>
+                  </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                <!-- <button type="button" class="btn btn-primary">CTA</button>
+                            <div class="search pl-30"> <img src="images/search.svg" alt="icon"></div> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <section>
+      <div class="banner">
+        <img src="../images/banner.jpg" alt="banner" />
+      </div>
+    </section>
+
+
+    <!-- counter -->
+    <section class="counter">
+      <div class="container">
+        <div class="row">
+          
+        <div>
+          <h3 class="page-heading">Drinking water + Public health</h3>
+          <p class="page-location">Home <span>>></span> Drinking water + Public health</p>
+          <p class="notable">Notable achievement:</p>
+        </div>
+
+        <div class="d-flex justify-content-center w-100">
+          <div>
+            <table class="table table-bordered total-table">
+              <tr>
+                <td>
+                  Total Tubewell
+                </td>
+                <td>
+                  303
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+
+        <div class="transparent-line text-center">
+          <img src="../images/line.svg" alt="line" />
+        </div>
+      </div>
+    </section>
+
+
+
+   
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-row">
+          <div class="col-list">
+            <div class="footer_social">
+              <a
+                href=""
+                target="_blank"
+                aria-label="visit facebook site"
+                contenteditable="false"
+                style="cursor: pointer"
+              >
+                <img src="images/facebook2.svg" alt="social" />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                aria-label="visit twitter site"
+                contenteditable="false"
+                style="cursor: pointer"
+              >
+                <img src="images/youtube2.svg" alt="social" />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                aria-label="visit youtube site"
+                contenteditable="false"
+                style="cursor: pointer"
+              >
+                <img src="images/twitter2.svg" alt="social" />
+              </a>
+            </div>
+
+            <div class="btn-group d-flex flex-column gap-3 mb-4">
+              <button class="btn btn-outline-light rounded-pill">
+                Recruitment
+              </button>
+              <button class="btn btn-outline-light rounded-pill">
+                Tenders
+              </button>
+            </div>
+
+            <button class="rounded btn-last-update p-0">
+              Last updated: 02-20-24
+            </button>
+          </div>
+          <div class="col-list">
+            <h3>Heading 1</h3>
+            <ul>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+            </ul>
+          </div>
+          <div class="col-list">
+            <h3>Heading 2</h3>
+            <ul>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+            </ul>
+          </div>
+          <div class="col-list">
+            <h3>Heading 3</h3>
+            <ul>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+            </ul>
+          </div>
+          <div class="col-list">
+            <h3>Heading 4</h3>
+            <ul>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+              <li><a href="">Item</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="terms">
+      <div class="container">
+        <ul>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
+<!-- JS here -->
+<script src="https://img1.digitallocker.gov.in/nad/v-22/assets/js/jquery.min.js"></script>
+<script src="https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0-beta1/js/ux4g.bundle.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    
+  });
+
+</script>
+
+<!-- font increase -->
+<script>
+  var $affectedElements = $("*"); // Can be extended, ex. $("div, p, span.someClass")
+
+  // Storing the original size in a data attribute so size can be reset
+  $affectedElements.each(function () {
+    var $this = $(this);
+    $this.data("orig-size", $this.css("font-size"));
+  });
+
+  $("#btn-increase").click(function () {
+    changeFontSize(1);
+  });
+
+  $("#btn-decrease").click(function () {
+    changeFontSize(-1);
+  });
+
+  $("#btn-orig").click(function () {
+    $affectedElements.each(function () {
+      var $this = $(this);
+      $this.css("font-size", $this.data("orig-size"));
+    });
+  });
+
+  function changeFontSize(direction) {
+    $affectedElements.each(function () {
+      var $this = $(this);
+      $this.css("font-size", parseInt($this.css("font-size")) + direction);
+    });
+  }
+</script>
