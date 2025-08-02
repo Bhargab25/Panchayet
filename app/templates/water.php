@@ -42,7 +42,7 @@ try{
     <!-- banner -->
     <section>
         <div class="banner">
-            <img src="assets/images/banner.jpg" alt="banner" />
+            <img src="/assets/images/banner.jpg" alt="banner" />
         </div>
     </section>
 
@@ -71,7 +71,7 @@ try{
             </div>
 
             <div class="transparent-line text-center">
-                <img src="assets/images/line.svg" alt="line" />
+                <img src="/assets/images/line.svg" alt="line" />
             </div>
         </div>
     </section>
@@ -155,16 +155,16 @@ try{
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
-                    <img src="assets/images/line.svg" alt="line" />
+                    <img src="/assets/images/line.svg" alt="line" />
                 </div>
                 <div class="text-center row">
                     <div class="col-md-6 mb-2">
-                        <a href="assets/images/tubewell/tubewell_1.jpg" data-lightbox="image-3"
-                            data-title="My caption"></a><img src="./assets/images/tubewell/tubewell_1.jpg" alt=""></a>
+                        <a href="/assets/images/tubewell/tubewell_1.jpg" data-lightbox="image-3"
+                            data-title="My caption"><img src="/assets/images/tubewell/tubewell_1.jpg" alt=""></a>
                     </div>
                     <div class="col-md-6 mb-2">
-                        <a href="assets/images/tubewell/tubewell_2.jpg" data-lightbox="image-2"
-                            data-title="My caption"></a><img src="assets/images/tubewell/tubewell_2.jpg" alt=""></a>
+                        <a href="/assets/images/tubewell/tubewell_2.jpg" data-lightbox="image-2"
+                            data-title="My caption"><img src="/assets/images/tubewell/tubewell_2.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@ try{
 <script src="https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0-beta1/js/ux4g.bundle.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-<script src="assets/js/lightbox2/dist/js/lightbox.js"></script>
+<script src="/assets/js/lightbox2/dist/js/lightbox.js"></script>
 
 <script>
     $(document).ready(function () {

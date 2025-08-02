@@ -10,7 +10,7 @@
                 contenteditable="false"
                 style="cursor: pointer"
               >
-                <img src="./assets/images/facebook2.svg" alt="social" />
+                <img src="/assets/images/facebook2.svg" alt="social" />
               </a>
               <a
                 href=""
@@ -19,7 +19,7 @@
                 contenteditable="false"
                 style="cursor: pointer"
               >
-                <img src="./assets/images/youtube2.svg" alt="social" />
+                <img src="/assets/images/youtube2.svg" alt="social" />
               </a>
               <a
                 href=""
@@ -28,7 +28,7 @@
                 contenteditable="false"
                 style="cursor: pointer"
               >
-                <img src="./assets/images/twitter2.svg" alt="social" />
+                <img src="/assets/images/twitter2.svg" alt="social" />
               </a>
             </div>
 

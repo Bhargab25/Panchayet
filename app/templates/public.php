@@ -121,7 +121,7 @@ $health_centers = [
     <!-- banner -->
     <section>
         <div class="banner">
-            <img src="assets/images/banner.jpg" alt="banner" />
+            <img src="/assets/images/banner.jpg" alt="banner" />
         </div>
     </section>
 
@@ -150,7 +150,7 @@ $health_centers = [
             </div>
 
             <div class="transparent-line text-center">
-                <img src="./assets/images/line.svg" alt="line" />
+                <img src="/assets/images/line.svg" alt="line" />
             </div>
         </div>
     </section>
@@ -305,7 +305,7 @@ $health_centers = [
 <script src="https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0-beta1/js/ux4g.bundle.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-<script src="./assets/js/lightbox2/dist/js/lightbox.js"></script>
+<script src="/assets/js/lightbox2/dist/js/lightbox.js"></script>
 
 <script>
     $(document).ready(function () {

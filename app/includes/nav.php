@@ -34,7 +34,7 @@
                     <span class="language01">
                         <form id="langForm" method="POST" class="d-flex align-items-center">
                             <i class="glog-lang">
-                                <img src="./assets/images/glob.svg" alt="glob" />
+                                <img src="/assets/images/glob.svg" alt="glob" />
                             </i>
                             <select name="language" id="changeLang" onchange="OnSelectedIndexChange()">
                                 <option value="" selected="" disable="">Language</option>
@@ -43,7 +43,7 @@
                         </form>
                     </span>
                     <a class="skip01" id="uw-widget-custom-trigger" contenteditable="false" style="cursor: pointer">
-                        <img src="./assets/images/accessible.svg" alt="Accessibility" />
+                        <img src="/assets/images/accessible.svg" alt="Accessibility" />
                         <strong>More</strong>
                     </a>
                 </div>
