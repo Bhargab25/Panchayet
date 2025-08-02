@@ -1,42 +1,56 @@
 pipeline {
     agent any
-    triggers {
-        githubPush()
-    }
-
+   
     environment {
         GIT_REPO_URL = 'https://github.com/Bhargab25/Panchayet.git'
-        GIT_BRANCH = 'main'
+        GIT_BRANCH = 'master'
+        DOCKER_IMAGE = 'panchyet'
     }
 
     stages {
         stage('Clone Repo') {
             steps {
-                // Clone into Jenkins workspace
-                git branch: "${env.GIT_BRANCH}", url: "${env.GIT_REPO_URL}"
+                    git branch: "${env.GIT_BRANCH}", url: "${env.GIT_REPO_URL}"
+
             }
         }
 
-        stage('Copy to /DEMO_WEB') {
+        stage('Build & Push Docker Image') {
             steps {
-            sh '''
-                # Stop and remove existing docker-compose stack if it exists
-                if [ -f /DEMO_WEB/devops/docker-compose.yml ]; then
-                docker compose -p panchayet -f /DEMO_WEB/devops/docker-compose.yml down || true
-                fi
+                script {
+                    def commitId = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
+                    def fullTag = "${DOCKER_IMAGE}:${commitId}"
 
-                # Copy new files with force overwrite
-                rm -rf  /DEMO_WEB/*
-                cp -rf * /DEMO_WEB/
-            '''
-            }
-        }
+                    withCredentials([usernamePassword(
+                        credentialsId: 'panchyet', 
+                        usernameVariable: 'DOCKER_USER', 
+                        passwordVariable: 'DOCKER_PASS'
+                    )]) {
+                        sh """
+                            echo "$DOCKER_PASS" | docker login repo.kustav.co.in -u "$DOCKER_USER" --password-stdin
+                            # Run composer setup inside app/app
 
-        stage('Deploy') {
-            steps {
-                dir('devops') {
-                    sh 'docker compose -p panchayet up -d'
+                            docker build -t ${fullTag} .
+                            docker push ${fullTag}
+                            # Cleanup local image
+                            docker rmi ${fullTag} || true
+                            docker logout
+                        """
+                    }
                 }
+            }
+        }
+
+        stage('Start Application with Docker Compose') {
+            steps {
+            script {
+                def commitId = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
+                def fullTag = "${DOCKER_IMAGE}:${commitId}"
+                sh """
+                export fullTag=${fullTag}  
+                docker compose up -p panchyet -d  
+                """
+            }
             }
         }
     }
