@@ -7,10 +7,6 @@
                             alt="indian flag" loading="lazy" /></span>
                 </div>
                 <div class="col-xl-6 col-lg-9 col-sm-6 col-5 text-end">
-                    <a href="#Skip-to-Main-Content" class="pr-5 d-none d-sm-inline" style="color: #fff">
-                        Skip to Main Content
-                    </a>
-                    <span class="partition d-none d-md-inline">|</span>
                     <span class="d-none d-md-inline">
                         <button role="button" id="btn-decrease" class="font01" onclick="decrease()">
                             -A
@@ -42,25 +38,21 @@
                             </select>
                         </form>
                     </span>
-                    <a class="skip01" id="uw-widget-custom-trigger" contenteditable="false" style="cursor: pointer">
-                        <img src="/assets/images/accessible.svg" alt="Accessibility" />
-                        <strong>More</strong>
-                    </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Top links -->
     <div class="">
-        <ul class="top-links d-flex flex-wrap flex-column flex-sm-row align-items-start justify-content-start">
-            <li><a href="./pages/glance.html">Gram panchayat at a glance</a></li>
-            <li><a href="<?= BASE_URL ?>/water">Drinking water</a></li>
-            <li><a href="<?= BASE_URL ?>/Publichealth">Public health</a></li>
-            <li><a href="<?= BASE_URL ?>/social">Social scheme ( Pensioner )</a></li>
-            <li><a href="projects.html">Education</a></li>
-            <li><a href="contact.html">Name of polling station</a></li>
-            <li><a href="contact.html">Activity</a></li>
-            <li><a href="">Swachh bharat mission</a></li>
+        <ul class="top-links d-flex flex-wrap align-items-center justify-content-start">
+            <a href="<?= BASE_URL ?>/panchayat"><li>Gram panchayat at a glance</li></a>
+            <a href="<?= BASE_URL ?>/water"><li>Drinking water</li></a>
+            <a href="<?= BASE_URL ?>/Publichealth"><li>Public health</li></a>
+            <a href="<?= BASE_URL ?>/social"><li>Social scheme ( Pensioner )</li></a>
+            <a href="<?= BASE_URL ?>/education"><li>Education</li></a>
+            <a href="<?= BASE_URL ?>/polling-station"><li>Name of polling station</li></a>
+            <a href="<?= BASE_URL ?>/activity"><li>Activity</li></a>
+            <a href="<?= BASE_URL ?>/swachh-bharat"><li>Swachh bharat mission</li></a>
         </ul>
     </div>
     <!-- Main manu -->

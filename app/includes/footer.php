@@ -1,102 +1,19 @@
-<footer>
-      <div class="container">
-        <div class="footer-row">
-          <div class="col-list">
-            <div class="footer_social">
-              <a
-                href=""
-                target="_blank"
-                aria-label="visit facebook site"
-                contenteditable="false"
-                style="cursor: pointer"
-              >
-                <img src="/assets/images/facebook2.svg" alt="social" />
-              </a>
-              <a
-                href=""
-                target="_blank"
-                aria-label="visit twitter site"
-                contenteditable="false"
-                style="cursor: pointer"
-              >
-                <img src="/assets/images/youtube2.svg" alt="social" />
-              </a>
-              <a
-                href=""
-                target="_blank"
-                aria-label="visit youtube site"
-                contenteditable="false"
-                style="cursor: pointer"
-              >
-                <img src="/assets/images/twitter2.svg" alt="social" />
-              </a>
-            </div>
-
-            <div class="btn-group d-flex flex-column gap-3 mb-4">
-              <button class="btn btn-outline-light rounded-pill">
-                Recruitment
-              </button>
-              <button class="btn btn-outline-light rounded-pill">
-                Tenders
-              </button>
-            </div>
-
-            <button class="rounded btn-last-update p-0">
-              Last updated: 02-20-24
-            </button>
-          </div>
-          <div class="col-list">
-            <h3>Heading 1</h3>
-            <ul>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-            </ul>
-          </div>
-          <div class="col-list">
-            <h3>Heading 2</h3>
-            <ul>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-            </ul>
-          </div>
-          <div class="col-list">
-            <h3>Heading 3</h3>
-            <ul>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-            </ul>
-          </div>
-          <div class="col-list">
-            <h3>Heading 4</h3>
-            <ul>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-              <li><a href="">Item</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+<footer style="text-align:center; font-size:15px;">
+  <div>
+    <a href="" style="color:#fff; margin-right:10px;">Contact Us</a>
+    <span style="margin:0 6px; color:#fff;">|</span>
+    <a href="" style="color:#fff; margin-right:10px;">Help</a>
+    <span style="margin:0 6px; color:#fff;">|</span>
+    <a href="" style="color:#fff; margin-right:10px;">Feedback</a>
+    <span style="margin:0 6px; color:#fff;">|</span>
+    <a href="" style="color:#fff; margin-right:10px;">Website Policy</a>
+    <span style="margin:0 6px; color:#fff;">|</span>
+    <a href="" style="color:#fff; margin-right:10px;">RTI</a>
+    <span style="margin:0 6px; color:#fff;">|</span>
+    <a href="" style="color:#fff;">Site Map</a>
+  </div>
+  <div style="margin-top:10px; font-size:13px; color:#bbb;">
+    Freserganj Gram Panchayat &copy; 2025  
+    Site best viewed with 1920x1080 resolution in Google Chrome 31.0.1650.63, Firefox 55.0.2, Safari 5.1.7 &amp; IE 11.0 and above
+  </div>
+</footer>

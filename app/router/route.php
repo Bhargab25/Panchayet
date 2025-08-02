@@ -24,10 +24,17 @@ class Router
             '' => '../templates/home.php',
             'index.php' => '../templates/home.php',
             'home' => '../templates/home.php',
+            'panchayat' => '../templates/glance.php',
             'water' => '../templates/water.php',
             'Publichealth' => '../templates/public.php',
             'social' => '../templates/socialScheme.php',
-            'blog' => '../templates/blog-content.php',
+            'education' => '../templates/education.php',
+            'polling-station' => '../templates/polling-station.php',
+            'activity' => '../templates/activity.php',
+            'swachh-bharat' => '../templates/swachh-bharat.php',
+            'orders' => '../templates/orders.php',
+            'etender' => '../templates/etender.php',
+            'contact' => '../templates/contact.php',
         ];
     }
 
