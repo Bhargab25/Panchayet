@@ -14,4 +14,4 @@ services:
       - "/panchyet/.env:/var/www/html/.env"
       - /SCM/ssl/:/key
     ports:
-      - "9443:9443"
+      - "9484:9484"
