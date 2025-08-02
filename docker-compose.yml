@@ -1,5 +1,5 @@
 networks:
-  app_network:
+  panchyet_network:
     name: panchyet_network
 
 services:
