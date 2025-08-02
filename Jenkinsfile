@@ -27,7 +27,6 @@ pipeline {
                         passwordVariable: 'DOCKER_PASS'
                     )]) {
                         sh """
-                            cd devops
                             # Login to Docker registry
                             echo "$DOCKER_PASS" | docker login repo.kustav.co.in -u "$DOCKER_USER" --password-stdin
                             # Run composer setup inside app/app

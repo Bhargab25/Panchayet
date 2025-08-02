@@ -11,7 +11,7 @@ RUN apt-get update && \
 WORKDIR /var/www/html
 
 # Use --chown to set ownership during copy (Docker 17.09+)
-COPY --chown=www-data:www-data ../app/ /var/www/html
+COPY --chown=www-data:www-data app/ /var/www/html
 
 COPY ./vhost.conf /etc/apache2/sites-available/000-default.conf
 
@@ -21,7 +21,7 @@ EXPOSE 9443
 RUN a2enmod rewrite
 RUN a2enmod dir
 RUN a2enmod rewrite ssl
-RUN echo "Listen 9443" >> /etc/apache2/ports.conf
+RUN echo "Listen 9484" >> /etc/apache2/ports.conf
 RUN echo "ServerName demo.kustav.co.in" >> /etc/apache2/apache2.conf
 RUN a2ensite 000-default.conf
 
