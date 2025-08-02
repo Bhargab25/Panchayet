@@ -49,7 +49,7 @@ pipeline {
                 def fullTag = "${DOCKER_IMAGE}:${commitId}"
                 sh """
                 export fullTag=${fullTag}  
-                docker compose up -p panchyet -d  
+                docker compose --project-name panchyet up -d
                 """
             }
             }
