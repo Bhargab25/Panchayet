@@ -4,7 +4,7 @@ pipeline {
     environment {
         GIT_REPO_URL = 'https://github.com/Bhargab25/Panchayet.git'
         GIT_BRANCH = 'main'
-        DOCKER_IMAGE = 'panchyet/app'
+        DOCKER_IMAGE = 'repo.kustav.co.in/panchyet/app'
     }
 
     stages {
