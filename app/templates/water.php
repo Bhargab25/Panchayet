@@ -14,10 +14,9 @@ try {
     $tubewells = [];
     // Optionally log error for production
     error_log("Database query failed: " . $e->getMessage());
-
 }
 
-try{
+try {
     // Fetch submersible data
     $stmt = $pdo->query("SELECT sansad, location, type, year FROM submersible ORDER BY sansad DESC");
     $submersibles = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -28,6 +27,19 @@ try{
 }
 
 ?>
+<style>
+    .hover-zoom img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 6px;
+    }
+
+    .hover-zoom:hover img {
+        transform: scale(1.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        border: 5px solid #007bff;
+        /* Optional blue border */
+    }
+</style>
 
 <body>
     <!-- Loader -->
@@ -55,7 +67,6 @@ try{
                     <p class="page-location">
                         Home <span>>></span> Drinking water
                     </p>
-                    <p class="notable">Notable achievement:</p>
                 </div>
 
                 <div class="d-flex justify-content-center w-100">
@@ -68,6 +79,11 @@ try{
                         </table>
                     </div>
                 </div>
+                <div>
+                    <p class="text-center mb-3">
+                        As part of our ongoing commitment to improving rural infrastructure, this project ensures access to safe and clean drinking water for every household in the community. With 303 tubewells installed across various locations, we aim to reduce water scarcity, prevent waterborne diseases, and promote better health and hygiene. This initiative not only enhances daily life but also empowers local families by securing one of the most basic human needs—clean water.
+                    </p>
+                </div>
             </div>
 
             <div class="transparent-line text-center">
@@ -77,7 +93,7 @@ try{
     </section>
 
     <!-- Submersible and Tubewell - Sansad-wise Section -->
-    <section class="container my-5">
+    <section class="container my-4">
         <div class="row">
             <!-- Submersible Section -->
             <div class="col-md-6 mb-4">
@@ -99,10 +115,10 @@ try{
                                 <?php if (!empty($submersibles)): ?>
                                     <?php foreach ($submersibles as $row): ?>
                                         <tr>
-                                            <td><?= htmlspecialchars($row['sansad']) ?></td>
-                                            <td><?= htmlspecialchars($row['location']) ?></td>
-                                            <td><?= htmlspecialchars($row['type']) ?></td>
-                                            <td><?= htmlspecialchars($row['year']) ?></td>
+                                            <td><?= htmlspecialchars($row['sansad'] ?? '') ?></td>
+                                            <td><?= htmlspecialchars($row['location'] ?? '') ?></td>
+                                            <td><?= htmlspecialchars($row['type'] ?? '') ?></td>
+                                            <td><?= htmlspecialchars($row['year'] ?? '') ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php else: ?>
@@ -135,10 +151,10 @@ try{
                                 <?php if (!empty($tubewells)): ?>
                                     <?php foreach ($tubewells as $row): ?>
                                         <tr>
-                                            <td><?= htmlspecialchars($row['sansad']) ?></td>
-                                            <td><?= htmlspecialchars($row['location']) ?></td>
-                                            <td><?= htmlspecialchars($row['depth']) ?></td>
-                                            <td><?= htmlspecialchars($row['year']) ?></td>
+                                            <td><?= htmlspecialchars($row['sansad'] ?? '') ?></td>
+                                            <td><?= htmlspecialchars($row['location'] ?? '') ?></td>
+                                            <td><?= htmlspecialchars($row['depth'] ?? '') ?></td>
+                                            <td><?= htmlspecialchars($row['year'] ?? '') ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php else: ?>
@@ -157,14 +173,16 @@ try{
                 <div class="text-center">
                     <img src="/assets/images/line.svg" alt="line" />
                 </div>
-                <div class="text-center row">
-                    <div class="col-md-6 mb-2">
-                        <a href="/assets/images/tubewell/tubewell_1.jpg" data-lightbox="image-3"
-                            data-title="My caption"><img src="/assets/images/tubewell/tubewell_1.jpg" alt=""></a>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-md-4 mb-2 hover-zoom mx-1">
+                        <a href="/assets/images/tubewell/tubewell_1.jpg" data-lightbox="image-3" data-title="Tubewell Image 1">
+                            <img src="/assets/images/tubewell/tubewell_1.jpg" alt="tubewell image 1" width="100%">
+                        </a>
                     </div>
-                    <div class="col-md-6 mb-2">
-                        <a href="/assets/images/tubewell/tubewell_2.jpg" data-lightbox="image-2"
-                            data-title="My caption"><img src="/assets/images/tubewell/tubewell_2.jpg" alt=""></a>
+                    <div class="col-md-4 mb-2 hover-zoom mx-1">
+                        <a href="/assets/images/tubewell/tubewell_2.jpg" data-lightbox="image-2" data-title="Tubewell Image 2">
+                            <img src="/assets/images/tubewell/tubewell_2.jpg" alt="tubewell image 2" width="100%">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -192,7 +210,7 @@ try{
 <script src="/assets/js/lightbox2/dist/js/lightbox.js"></script>
 
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#tubewellsTable').DataTable({
             "paging": true,
             "searching": true,
@@ -218,28 +236,28 @@ try{
     var $affectedElements = $("*"); // Can be extended, ex. $("div, p, span.someClass")
 
     // Storing the original size in a data attribute so size can be reset
-    $affectedElements.each(function () {
+    $affectedElements.each(function() {
         var $this = $(this);
         $this.data("orig-size", $this.css("font-size"));
     });
 
-    $("#btn-increase").click(function () {
+    $("#btn-increase").click(function() {
         changeFontSize(1);
     });
 
-    $("#btn-decrease").click(function () {
+    $("#btn-decrease").click(function() {
         changeFontSize(-1);
     });
 
-    $("#btn-orig").click(function () {
-        $affectedElements.each(function () {
+    $("#btn-orig").click(function() {
+        $affectedElements.each(function() {
             var $this = $(this);
             $this.css("font-size", $this.data("orig-size"));
         });
     });
 
     function changeFontSize(direction) {
-        $affectedElements.each(function () {
+        $affectedElements.each(function() {
             var $this = $(this);
             $this.css("font-size", parseInt($this.css("font-size")) + direction);
         });

@@ -22,8 +22,8 @@ require_once '../router/route.php';
   <!-- banner -->
   <section>
     <div class="banner">
-      <img src="./assets/images/banner.jpg" alt="banner" />
-      <img src="./assets/images/banner.jpg" alt="banner" />
+      <img src="/assets/images/banner.jpg" alt="banner" />
+      <img src="/assets/images/banner.jpg" alt="banner" />
     </div>
   </section>
 
@@ -32,7 +32,7 @@ require_once '../router/route.php';
     <div class="container">
       <div class="latest-news-content d-flex align-items-center justify-content-between">
         <h5 class="d-flex gap-2">
-          <img src="./assets/images/announce.png" alt="star" /> LATEST
+          <img src="/assets/images/announce.png" alt="star" /> LATEST
         </h5>
         <marquee behavior="" direction="">
           <span>
@@ -51,35 +51,35 @@ require_once '../router/route.php';
       <div class="row">
         <div class="col-12 col-sm-3">
           <div class="counter_box text-center">
-            <img src="./assets/images/crowd-of-users.png" alt="icon" />
+            <img src="/assets/images/crowd-of-users.png" alt="icon" />
             <h1>25142</h1>
             <p>Population</p>
           </div>
         </div>
         <div class="col-12 col-sm-3">
           <div class="counter_box text-center">
-            <img src="./assets/images/voting-box.png" alt="icon" />
+            <img src="/assets/images/voting-box.png" alt="icon" />
             <h1>18450</h1>
             <p>Voters</p>
           </div>
         </div>
         <div class="col-12 col-sm-3">
           <div class="counter_box text-center">
-            <img src="./assets/images/organization.png" alt="icon" />
+            <img src="/assets/images/organization.png" alt="icon" />
             <h1>40</h1>
             <p>Members</p>
           </div>
         </div>
         <div class="col-12 col-sm-3">
           <div class="counter_box text-center">
-            <img src="./assets/images/school.png" alt="icon" />
+            <img src="/assets/images/school.png" alt="icon" />
             <h1>25</h1>
             <p>Schools</p>
           </div>
         </div>
       </div>
       <div class="transparent-line text-center">
-        <img src="./assets/images/line.svg" alt="line" />
+        <img src="/assets/images/line.svg" alt="line" />
       </div>
     </div>
   </section>
@@ -168,33 +168,33 @@ require_once '../router/route.php';
     <div class="container">
       <div class="row scheme">
         <div class="scheme-item">
-          <img src="./assets/images/promotion.png" alt="" />
+          <img src="/assets/images/promotion.png" alt="" />
           <a href="">
             <p>Lodge Your Grievance</p>
           </a>
         </div>
         <div class="scheme-item">
-          <img src="./assets/images/destination.png" alt="" />
+          <img src="/assets/images/destination.png" alt="" />
           <p>Tourism</p>
         </div>
         <div class="scheme-item">
-          <img src="./assets/images/customer-service.png" alt="" />
+          <img src="/assets/images/customer-service.png" alt="" />
           <p>Helpdesk</p>
         </div>
         <div class="scheme-item">
-          <img src="./assets/images/meeting.png" alt="" />
+          <img src="/assets/images/meeting.png" alt="" />
           <p>Meeting</p>
         </div>
         <div class="scheme-item">
-          <img src="./assets/images/asset.png" alt="" />
+          <img src="/assets/images/asset.png" alt="" />
           <p>Asset management</p>
         </div>
         <div class="scheme-item">
-          <img src="./assets/images/property-tax.png" alt="" />
+          <img src="/assets/images/property-tax.png" alt="" />
           <p>Online property tax</p>
         </div>
         <div class="scheme-item">
-          <img src="./assets/images/public-health.png" alt="" />
+          <img src="/assets/images/public-health.png" alt="" />
           <p>Public health</p>
         </div>
       </div>
@@ -211,21 +211,21 @@ require_once '../router/route.php';
         <div class="row">
           <div class="col-sm-5">
             <div class="card-modi-ji">
-              <img src="./assets/images/280x280.png" alt="modi ji" />
+              <img src="/assets/images/280x280.png" alt="modi ji" />
               <p>G.P. Pradhan</p>
               <h3>Kasinath Jana</h3>
               <div class="pmg-social d-flex gap-2 align-items-center justify-content-center mt-20">
                 <!-- <a href=""><img src="images/linkedin.svg" alt="linkedin"></a> -->
-                <a href=""><img src="./assets/images/facebook2.svg" alt="facebook" /></a>
+                <a href=""><img src="/assets/images/facebook2.svg" alt="facebook" /></a>
                 <!-- <a href=""><img src="images/instagram.svg" alt="instagram"></a> -->
-                <a href=""><img src="./assets/images/twitter2.svg" alt="linkedin" /></a>
+                <a href=""><img src="/assets/images/twitter2.svg" alt="linkedin" /></a>
               </div>
             </div>
           </div>
           <div class="col-sm-7">
             <div class="pmg-team">
               <div class="pmg-team-content d-flex gap-3 align-items-center">
-                <img src="./assets/images/156x156.png" alt="name" />
+                <img src="/assets/images/156x156.png" alt="name" />
                 <div class="pmg-team-title ashwini-ji">
                   <p>Upa-Pradhan</p>
                   <h3>Kanika Khan Mondal</h3>
@@ -233,7 +233,7 @@ require_once '../router/route.php';
               </div>
 
               <div class="pmg-team-content d-flex flex-column align-items-center">
-                <img src="./assets/images/120x120.png" alt="name" />
+                <img src="/assets/images/120x120.png" alt="name" />
                 <div class="pmg-team-title minister-ji text-center">
                   <p>Member</p>
                   <h3>Dipak Kumar Das</h3>
@@ -241,7 +241,7 @@ require_once '../router/route.php';
               </div>
 
               <div class="pmg-team-content d-flex flex-column align-items-center">
-                <img src="./assets/images/120x120.png" alt="name" />
+                <img src="/assets/images/120x120.png" alt="name" />
                 <div class="pmg-team-title minister-ji text-center">
                   <p>MEMBER</p>
                   <h3>Ranajet Barman</h3>
@@ -307,13 +307,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-services.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-services.png" alt="icon" loading="lazy" />
                     <h3>PMAY-G</h3>
                   </div>
                   <div class="flip-card-back service-card" data-url="pmayg.html">
                     <p>Houses Completed</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -323,13 +323,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-care.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-care.png" alt="icon" loading="lazy" />
                     <h3>15th Finance Commission</h3>
                   </div>
                   <div class="flip-card-back service-card" data-url="15th-finance.html">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -339,13 +339,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-services.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-services.png" alt="icon" loading="lazy" />
                     <h3>MGNREGA</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -355,13 +355,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-security.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-security.png" alt="icon" loading="lazy" />
                     <h3>5th FC</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -371,13 +371,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-care.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-care.png" alt="icon" loading="lazy" />
                     <h3>Public distribution system</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -387,13 +387,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-care.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-care.png" alt="icon" loading="lazy" />
                     <h3>Community toilet & Burning ghat</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -403,13 +403,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-security.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-security.png" alt="icon" loading="lazy" />
                     <h3>Bina mulya samajik suraksha yojana (pmssy)</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -419,13 +419,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-security.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-security.png" alt="icon" loading="lazy" />
                     <h3>Social security</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -435,13 +435,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-care.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-care.png" alt="icon" loading="lazy" />
                     <h3>Agriculture</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -451,13 +451,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/social-security.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/social-security.png" alt="icon" loading="lazy" />
                     <h3>SC, ST & OBC Certificate</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -467,13 +467,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/multiple-users-silhouette.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/multiple-users-silhouette.png" alt="icon" loading="lazy" />
                     <h3>Staff profile</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total Staff</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -483,13 +483,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/group.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/group.png" alt="icon" loading="lazy" />
                     <h3>Membar profile</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Total Membar</p>
                     <h3>0</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -499,13 +499,13 @@ require_once '../router/route.php';
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front service-card">
-                    <img src="./assets/images/group.png" alt="icon" loading="lazy" />
+                    <img src="/assets/images/group.png" alt="icon" loading="lazy" />
                     <h3>Pradhan-&-Upapradhan</h3>
                   </div>
                   <div class="flip-card-back service-card">
                     <p>Upto</p>
                     <h3>2025</h3>
-                    <img src="./assets/images/next1.png" alt="" width="40px" class="flip-next" />
+                    <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
               </div>
@@ -619,25 +619,25 @@ require_once '../router/route.php';
                   <div class="carousel-item active">
                     <div class="row mb-20">
                       <div class="col-sm-6">
-                        <img class="w-100" src="./assets/images/gallery/community/Community.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community.webp" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                       <div class="col-sm-6">
-                        <img class="w-100" src="./assets/images/gallery/community/Community2.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community2.webp" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/community/Community3.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community3.webp" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/community/Community4.avif" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community4.avif" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/community/Community5.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community5.jpg" alt="img"
                           loading="lazy" />
                       </div>
                     </div>
@@ -645,25 +645,25 @@ require_once '../router/route.php';
                   <div class="carousel-item">
                     <div class="row mb-20">
                       <div class="col-sm-6">
-                        <img class="w-100" src="./assets/images/gallery/community/Community6.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community6.jpg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                       <div class="col-sm-6">
-                        <img class="w-100" src="./assets/images/gallery/community/Community7.png" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community7.png" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/community/Community.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community.webp" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/community/Community2.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community2.webp" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/community/Community3.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community3.webp" alt="img"
                           loading="lazy" />
                       </div>
                     </div>
@@ -702,25 +702,25 @@ require_once '../router/route.php';
                   <div class="carousel-item active">
                     <div class="row mb-20">
                       <div class="col-sm-6">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights.jpg" alt="img"
                           width="618px" height="332px" loading="lazy" style="height: 332px" />
                       </div>
                       <div class="col-sm-6">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights2.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights2.jpg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights3.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights3.jpg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights4.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights4.jpg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights5.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights5.jpg" alt="img"
                           loading="lazy" />
                       </div>
                     </div>
@@ -728,21 +728,21 @@ require_once '../router/route.php';
                   <div class="carousel-item">
                     <div class="row mb-20">
                       <div class="col-sm-6">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights6.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights6.jpg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                       <div class="col-sm-6">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights7.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights7.jpg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights.jpg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="./assets/images/gallery/highlights/Highlights2.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights2.jpg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
@@ -771,7 +771,7 @@ require_once '../router/route.php';
 
   <!-- social media section -->
   <section class="social_media_main">
-    <img src="./assets/images/icons/right-circle.svg" alt="circle" loading="lazy" class="left-circle" />
+    <img src="/assets/images/icons/right-circle.svg" alt="circle" loading="lazy" class="left-circle" />
     <div class="container">
       <div class="social_media">
         <div class="social_media_content-left">
@@ -789,8 +789,8 @@ require_once '../router/route.php';
               </div> -->
         </div>
         <div class="social_media_content-left">
-          <a href="./assets/images/map.jpeg" data-lightbox="image-1" data-title="My caption"><img
-              src="./assets/images/map.jpeg" alt="mobile" loading="lazy" style="
+          <a href="/assets/images/map.jpeg" data-lightbox="image-1" data-title="My caption"><img
+              src="/assets/images/map.jpeg" alt="mobile" loading="lazy" style="
                 width: 768px !important;
                 height: 602px !important;
                 object-fit: contain;
@@ -799,7 +799,7 @@ require_once '../router/route.php';
       </div>
     </div>
     <!-- <img src="images/flag.png" alt="flag" loading="lazy" class="flag-men"> -->
-    <img src="./assets/images/icons/right-circle.svg" alt="circle" loading="lazy" class="right-circle" />
+    <img src="/assets/images/icons/right-circle.svg" alt="circle" loading="lazy" class="right-circle" />
   </section>
 
   <!-- Recruitment and chat part -->
@@ -1028,7 +1028,7 @@ require_once '../router/route.php';
         </button>
         <a href="https://www.ux4g.gov.in" target="_blank" class="copyright-text">
           <span class="uwaw-features__item__name ux4g-copy ux4g-copyright">Created by</span>
-          <img src="./assets/images/ux4g-logo.svg" alt="logo" loading="lazy" width="93" height="25" />
+          <img src="/assets/images/ux4g-logo.svg" alt="logo" loading="lazy" width="93" height="25" />
         </a>
       </div>
     </div>
@@ -1039,8 +1039,8 @@ require_once '../router/route.php';
 <!-- JS here -->
 <script src="https://img1.digitallocker.gov.in/nad/v-22/assets/js/jquery.min.js"></script>
 <script src="https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0-beta1/js/ux4g.bundle.min.js"></script>
-<script type="text/javascript" src="./assets/js/slick/slick/slick.min.js"></script>
-<script src="./assets/js/lightbox2/dist/js/lightbox.js"></script>
+<script type="text/javascript" src="/assets/js/slick/slick/slick.min.js"></script>
+<script src="/assets/js/lightbox2/dist/js/lightbox.js"></script>
 
 <script>
   $(document).ready(function () {

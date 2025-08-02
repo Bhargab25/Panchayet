@@ -164,7 +164,7 @@ $health_centers = [
                     <?php if ($center['type'] === 'HWC'): ?>
                         <div class="card mb-4 shadow-sm border-0 rounded-3" style="transition: box-shadow 0.3s ease;">
                             <div class="card-header bg-light border-bottom-0">
-                                <h4 class="mb-0"><?= htmlspecialchars($center['name']) ?>
+                                <h4 class="mb-0"><?= htmlspecialchars($center['name'] ?? '') ?>
                                     <?php if (!empty($center['location'])): ?>
                                         <small class="text-muted"> — <?= htmlspecialchars($center['location']) ?></small>
                                     <?php endif; ?>
@@ -212,14 +212,18 @@ $health_centers = [
                                     <div class="col-md-6">
                                         <span class="text-secondary fw-semibold d-block mb-1">Health Supervisor:</span>
                                         <ul class="list-unstyled ps-3 mb-0" style="max-height:140px; overflow-y:auto;">
-                                            <?php foreach ($center['health_supervisor'] as $icds): ?>
-                                                <li class="mb-1">
-                                                    <?= htmlspecialchars($icds['name'] ?? '') ?>
-                                                    <?php if (!empty($icds['phone'])): ?>
-                                                        <small class="text-muted ms-2">(<?= htmlspecialchars($icds['phone']) ?>)</small>
-                                                    <?php endif; ?>
-                                                </li>
-                                            <?php endforeach; ?>
+                                            <?php if (is_array($center['health_supervisor'])) {  ?>
+                                                <?php foreach ($center['health_supervisor'] as $icds): ?>
+                                                    <li class="mb-1">
+                                                        <?= htmlspecialchars($icds['name'] ?? '') ?>
+                                                        <?php if (!empty($icds['phone'])): ?>
+                                                            <small class="text-muted ms-2">(<?= htmlspecialchars($icds['phone'] ?? '') ?>)</small>
+                                                        <?php endif; ?>
+                                                    </li>
+                                                <?php endforeach; ?>
+                                            <?php } else { ?>
+                                                <li class="mb-1">No health supervisors assigned</li>
+                                            <?php } ?>
                                         </ul>
                                     </div>
                                 </div>
@@ -308,7 +312,7 @@ $health_centers = [
 <script src="/assets/js/lightbox2/dist/js/lightbox.js"></script>
 
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#tubewellsTable').DataTable({
             "paging": true,
             "searching": true,
@@ -334,28 +338,28 @@ $health_centers = [
     var $affectedElements = $("*"); // Can be extended, ex. $("div, p, span.someClass")
 
     // Storing the original size in a data attribute so size can be reset
-    $affectedElements.each(function () {
+    $affectedElements.each(function() {
         var $this = $(this);
         $this.data("orig-size", $this.css("font-size"));
     });
 
-    $("#btn-increase").click(function () {
+    $("#btn-increase").click(function() {
         changeFontSize(1);
     });
 
-    $("#btn-decrease").click(function () {
+    $("#btn-decrease").click(function() {
         changeFontSize(-1);
     });
 
-    $("#btn-orig").click(function () {
-        $affectedElements.each(function () {
+    $("#btn-orig").click(function() {
+        $affectedElements.each(function() {
             var $this = $(this);
             $this.css("font-size", $this.data("orig-size"));
         });
     });
 
     function changeFontSize(direction) {
-        $affectedElements.each(function () {
+        $affectedElements.each(function() {
             var $this = $(this);
             $this.css("font-size", parseInt($this.css("font-size")) + direction);
         });
