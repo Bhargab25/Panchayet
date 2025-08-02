@@ -25,4 +25,4 @@ RUN echo "Listen 9484" >> /etc/apache2/ports.conf
 RUN echo "ServerName demo.kustav.co.in" >> /etc/apache2/apache2.conf
 RUN a2ensite 000-default.conf
 
-CMD ["/usr/sbin/apache2ctl -D FOREGROUND"]
+CMD ["apache2-foreground"]
