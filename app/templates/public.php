@@ -121,7 +121,7 @@ $health_centers = [
     <!-- banner -->
     <section>
         <div class="banner">
-            <img src="./assets/images/banner.jpg" alt="banner" />
+            <img src="assets/images/banner.jpg" alt="banner" />
         </div>
     </section>
 
