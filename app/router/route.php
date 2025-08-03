@@ -35,6 +35,8 @@ class Router
             'orders' => '../templates/orders.php',
             'etender' => '../templates/etender.php',
             'contact' => '../templates/contact.php',
+            'member-profile' => '../templates/member-profile.php',
+            'staff-profile' => '../templates/staff-profile.php',
         ];
     }
 

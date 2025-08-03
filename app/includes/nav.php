@@ -63,9 +63,9 @@
                     <!-- <a class="navbar-brand" href="#">
                             <img src="images/logo.svg" alt="logo" loading="lazy">                            
                         </a> -->
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="<?= BASE_URL ?>/">
                         <!-- <img src="images/logo1.png" alt="logo"> -->
-                        <h4>Freserganj Gram Panchayat</h4>
+                        <h4 class="fw-bold">Freserganj Gram Panchayat</h4>
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

@@ -22,8 +22,10 @@ require_once '../router/route.php';
   <!-- banner -->
   <section>
     <div class="banner">
-      <img src="/assets/images/banner.jpg" alt="banner" />
-      <img src="/assets/images/banner.jpg" alt="banner" />
+      <img src="/assets/images/banner/banner_1.png" alt="banner" />
+      <img src="/assets/images/banner/banner_3.png" alt="banner" />
+      <img src="/assets/images/banner/banner.png" alt="banner" />
+      <img src="/assets/images/banner/banner_2.png" alt="banner" />
     </div>
   </section>
 
@@ -470,7 +472,7 @@ require_once '../router/route.php';
                     <img src="/assets/images/multiple-users-silhouette.png" alt="icon" loading="lazy" />
                     <h3>Staff profile</h3>
                   </div>
-                  <div class="flip-card-back service-card">
+                  <div class="flip-card-back service-card" data-url="<?= BASE_URL ?>/staff-profile">
                     <p>Total Staff</p>
                     <h3>0</h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
@@ -486,9 +488,9 @@ require_once '../router/route.php';
                     <img src="/assets/images/group.png" alt="icon" loading="lazy" />
                     <h3>Membar profile</h3>
                   </div>
-                  <div class="flip-card-back service-card">
+                  <div class="flip-card-back service-card" data-url="<?= BASE_URL ?>/member-profile">
                     <p>Total Membar</p>
-                    <h3>0</h3>
+                    <h3>20</h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
