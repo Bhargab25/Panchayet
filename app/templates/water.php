@@ -80,7 +80,7 @@ try {
                     </div>
                 </div>
                 <div>
-                    <p class="text-center mb-3">
+                    <p class="text-center mb-3" style="font-size: 1.2rem; font-weight: bold;">
                         As part of our ongoing commitment to improving rural infrastructure, this project ensures access to safe and clean drinking water for every household in the community. With 303 tubewells installed across various locations, we aim to reduce water scarcity, prevent waterborne diseases, and promote better health and hygiene. This initiative not only enhances daily life but also empowers local families by securing one of the most basic human needs—clean water.
                     </p>
                 </div>
@@ -115,10 +115,10 @@ try {
                                 <?php if (!empty($submersibles)): ?>
                                     <?php foreach ($submersibles as $row): ?>
                                         <tr>
-                                            <td><?= htmlspecialchars($row['sansad'] ?? '') ?></td>
-                                            <td><?= htmlspecialchars($row['location'] ?? '') ?></td>
-                                            <td><?= htmlspecialchars($row['type'] ?? '') ?></td>
-                                            <td><?= htmlspecialchars($row['year'] ?? '') ?></td>
+                                            <td style="font-weight: bold;"><?= htmlspecialchars($row['sansad'] ?? '') ?></td>
+                                            <td style="font-weight: bold;"><?= htmlspecialchars($row['location'] ?? '') ?></td>
+                                            <td style="font-weight: bold;"><?= htmlspecialchars($row['type'] ?? '') ?></td>
+                                            <td style="font-weight: bold;"><?= htmlspecialchars($row['year'] ?? '') ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php else: ?>
@@ -151,10 +151,10 @@ try {
                                 <?php if (!empty($tubewells)): ?>
                                     <?php foreach ($tubewells as $row): ?>
                                         <tr>
-                                            <td><?= htmlspecialchars($row['sansad'] ?? '') ?></td>
-                                            <td><?= htmlspecialchars($row['location'] ?? '') ?></td>
-                                            <td><?= htmlspecialchars($row['depth'] ?? '') ?></td>
-                                            <td><?= htmlspecialchars($row['year'] ?? '') ?></td>
+                                            <td style="font-weight: bold;"><?= htmlspecialchars($row['sansad'] ?? '') ?></td>
+                                            <td style="font-weight: bold;"><?= htmlspecialchars($row['location'] ?? '') ?></td>
+                                            <td style="font-weight: bold;"><?= htmlspecialchars($row['depth'] ?? '') ?></td>
+                                            <td style="font-weight: bold;"><?= htmlspecialchars($row['year'] ?? '') ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php else: ?>

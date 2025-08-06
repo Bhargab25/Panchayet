@@ -72,7 +72,7 @@ $health_centers = [
     ],
     // 3. Debnibag PHC (from Image 3)
     [
-        'type' => 'PHC',
+        'type' => 'HWC',
         'name' => 'Debnibag PHC',
         'staff' => [
             '1st_ANM' => [
@@ -142,7 +142,7 @@ $health_centers = [
                         <table class="table table-bordered total-table">
                             <tr>
                                 <td>Total Centers</td>
-                                <td>3</td>
+                                <td>4</td>
                             </tr>
                         </table>
                     </div>
@@ -163,10 +163,11 @@ $health_centers = [
                 <?php foreach ($health_centers as $center): ?>
                     <?php if ($center['type'] === 'HWC'): ?>
                         <div class="card mb-4 shadow-sm border-0 rounded-3" style="transition: box-shadow 0.3s ease;">
-                            <div class="card-header bg-light border-bottom-0">
-                                <h4 class="mb-0"><?= htmlspecialchars($center['name'] ?? '') ?>
+                            <div class="card-header bg-dark text-white fw-semibold border-bottom-0">
+                                <h4 class="mb-0">
+                                    <?= htmlspecialchars($center['name'] ?? '') ?>
                                     <?php if (!empty($center['location'])): ?>
-                                        <small class="text-muted"> — <?= htmlspecialchars($center['location']) ?></small>
+                                        <small class="text-light"> — <?= htmlspecialchars($center['location']) ?></small>
                                     <?php endif; ?>
                                 </h4>
                             </div>
@@ -174,26 +175,26 @@ $health_centers = [
                                 <p class="mb-2">
                                     <span class="text-secondary fw-semibold">1st ANM:</span>
                                     <span><?= htmlspecialchars($center['staff']['1st_ANM']['name'] ?? '') ?></span>
-                                    <?php if (!empty($center['staff']['1st_ANM']['phone'])): ?>
+                                    <!-- <?php if (!empty($center['staff']['1st_ANM']['phone'])): ?>
                                         <span
                                             class="badge bg-info text-dark ms-2"><?= htmlspecialchars($center['staff']['1st_ANM']['phone']) ?></span>
-                                    <?php endif; ?>
+                                    <?php endif; ?> -->
                                 </p>
                                 <p class="mb-2">
                                     <span class="text-secondary fw-semibold">2nd ANM:</span>
                                     <span><?= htmlspecialchars($center['staff']['2nd_ANM']['name'] ?? '') ?></span>
-                                    <?php if (!empty($center['staff']['2nd_ANM']['phone'])): ?>
+                                    <!-- <?php if (!empty($center['staff']['2nd_ANM']['phone'])): ?>
                                         <span
                                             class="badge bg-info text-dark ms-2"><?= htmlspecialchars($center['staff']['2nd_ANM']['phone']) ?></span>
-                                    <?php endif; ?>
+                                    <?php endif; ?> -->
                                 </p>
                                 <p class="mb-3">
                                     <span class="text-secondary fw-semibold">CHO:</span>
                                     <span><?= htmlspecialchars($center['staff']['CHO']['name'] ?? '') ?></span>
-                                    <?php if (!empty($center['staff']['CHO']['phone'])): ?>
+                                    <!-- <?php if (!empty($center['staff']['CHO']['phone'])): ?>
                                         <span
                                             class="badge bg-info text-dark ms-2"><?= htmlspecialchars($center['staff']['CHO']['phone']) ?></span>
-                                    <?php endif; ?>
+                                    <?php endif; ?> -->
                                 </p>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
@@ -202,23 +203,23 @@ $health_centers = [
                                             <?php foreach ($center['asha'] as $asha): ?>
                                                 <li class="mb-1">
                                                     <?= htmlspecialchars($asha['name'] ?? '') ?>
-                                                    <?php if (!empty($asha['phone'])): ?>
+                                                    <!-- <?php if (!empty($asha['phone'])): ?>
                                                         <small class="text-muted ms-2">(<?= htmlspecialchars($asha['phone']) ?>)</small>
-                                                    <?php endif; ?>
+                                                    <?php endif; ?> -->
                                                 </li>
                                             <?php endforeach; ?>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <span class="text-secondary fw-semibold d-block mb-1">Health Supervisor:</span>
+                                        <span class="text-secondary fw-semibold d-block mb-1">ICDS Workers:</span>
                                         <ul class="list-unstyled ps-3 mb-0" style="max-height:140px; overflow-y:auto;">
                                             <?php if (is_array($center['health_supervisor'])) {  ?>
                                                 <?php foreach ($center['health_supervisor'] as $icds): ?>
                                                     <li class="mb-1">
                                                         <?= htmlspecialchars($icds['name'] ?? '') ?>
-                                                        <?php if (!empty($icds['phone'])): ?>
+                                                        <!-- <?php if (!empty($icds['phone'])): ?>
                                                             <small class="text-muted ms-2">(<?= htmlspecialchars($icds['phone'] ?? '') ?>)</small>
-                                                        <?php endif; ?>
+                                                        <?php endif; ?> -->
                                                     </li>
                                                 <?php endforeach; ?>
                                             <?php } else { ?>
@@ -244,26 +245,26 @@ $health_centers = [
                                 <p class="mb-2">
                                     <span class="text-secondary fw-semibold">1st ANM:</span>
                                     <span><?= htmlspecialchars($center['staff']['1st_ANM']['name'] ?? '') ?></span>
-                                    <?php if (!empty($center['staff']['1st_ANM']['phone'])): ?>
+                                    <!-- <?php if (!empty($center['staff']['1st_ANM']['phone'])): ?>
                                         <span
                                             class="badge bg-info text-dark ms-2"><?= htmlspecialchars($center['staff']['1st_ANM']['phone']) ?></span>
-                                    <?php endif; ?>
+                                    <?php endif; ?> -->
                                 </p>
                                 <p class="mb-2">
                                     <span class="text-secondary fw-semibold">2nd ANM:</span>
                                     <span><?= htmlspecialchars($center['staff']['2nd_ANM']['name'] ?? '') ?></span>
-                                    <?php if (!empty($center['staff']['2nd_ANM']['phone'])): ?>
+                                    <!-- <?php if (!empty($center['staff']['2nd_ANM']['phone'])): ?>
                                         <span
                                             class="badge bg-info text-dark ms-2"><?= htmlspecialchars($center['staff']['2nd_ANM']['phone']) ?></span>
-                                    <?php endif; ?>
+                                    <?php endif; ?> -->
                                 </p>
                                 <p class="mb-3">
                                     <span class="text-secondary fw-semibold">CHO:</span>
                                     <span><?= htmlspecialchars($center['staff']['CHO']['name'] ?? '') ?></span>
-                                    <?php if (!empty($center['staff']['CHO']['phone'])): ?>
+                                    <!-- <?php if (!empty($center['staff']['CHO']['phone'])): ?>
                                         <span
                                             class="badge bg-info text-dark ms-2"><?= htmlspecialchars($center['staff']['CHO']['phone']) ?></span>
-                                    <?php endif; ?>
+                                    <?php endif; ?> -->
                                 </p>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">

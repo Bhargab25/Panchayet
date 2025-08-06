@@ -5,7 +5,7 @@ require_once __DIR__ . '/../includes/header.php';
 require_once '../router/route.php';
 
 global $pdo;
-$schemesName = ['NSAP', 'Jai Bangla', 'Lakshmir Bhandar', 'Taposili Bandhu', 'Manabik', 'Fisherman Welfare', 'Agriculture pension', 'agriculture pension'];
+$schemesName = ['NSAP', 'Jai Bangla', 'Lakshmir Bhandar', 'Taposili Bandhu', 'Manabik', 'Fisherman Welfare', 'Agriculture pension'];
 
 function schemeToTableName($scheme)
 {
@@ -32,6 +32,12 @@ foreach ($schemesName as $scheme) {
         error_log("Error fetching beneficiaries for $scheme: " . $e->getMessage());
         $schemes[$scheme] = [];
     }
+}
+
+$totalPeople = 0;
+
+foreach ($schemes as $beneficiaries) {
+    $totalPeople += count($beneficiaries);
 }
 ?>
 
@@ -73,9 +79,9 @@ foreach ($schemesName as $scheme) {
         <div class="container">
             <div class="row">
                 <div>
-                    <h3 class="page-heading">Public Health</h3>
+                    <h3 class="page-heading">Social scheme ( Pensioner )</h3>
                     <p class="page-location">
-                        Home <span>>></span> Public Health
+                        Home <span>>></span> Social scheme ( Pensioner )
                     </p>
                     <p class="notable">Notable achievement:</p>
                 </div>
@@ -85,7 +91,7 @@ foreach ($schemesName as $scheme) {
                         <table class="table table-bordered total-table">
                             <tr>
                                 <td>Total Beneficiary</td>
-                                <td>3</td>
+                                <td><?php echo $totalPeople; ?></td>
                             </tr>
                         </table>
                     </div>
