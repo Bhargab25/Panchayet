@@ -38,9 +38,8 @@ require_once '../router/route.php';
         </h5>
         <marquee behavior="" direction="">
           <span>
-            << Description of Latest Updates 2 goes here.>>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; << Description of Latest Updates 2 goes here.>>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<< Description of Latest Updates 2 goes here.>>
+            << Nothing to show here, please check back later. >>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; << Nothing to show here, please check back later.>>
           </span>
         </marquee>
       </div>
@@ -440,9 +439,9 @@ require_once '../router/route.php';
                     <img src="/assets/images/social-care.png" alt="icon" loading="lazy" />
                     <h3>Agriculture</h3>
                   </div>
-                  <div class="flip-card-back service-card">
-                    <p>Total beneficiary</p>
-                    <h3>0</h3>
+                  <div class="flip-card-back service-card" data-url="<?= BASE_URL ?>/farmers">
+                    <p>Total Farmers</p>
+                    <h3>3786</h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -474,7 +473,7 @@ require_once '../router/route.php';
                   </div>
                   <div class="flip-card-back service-card" data-url="<?= BASE_URL ?>/staff-profile">
                     <p>Total Staff</p>
-                    <h3>0</h3>
+                    <h3>16</h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>

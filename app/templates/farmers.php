@@ -1,0 +1,150 @@
+<?php
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/db.php';
+require_once __DIR__ . '/../includes/header.php';
+require_once '../router/route.php';
+
+global $pdo;
+$stmt = $pdo->query("SELECT village_name, total_farmers FROM krishak_bandhu_farmers");
+$farmers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+<style>
+    .card h4 {
+        font-size: 1.25rem;
+    }
+
+    .badge {
+        border-radius: 50px;
+    }
+
+    @media (max-width: 768px) {
+        .card h4 {
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<body>
+    <!-- Loader -->
+    <!-- <div class="loader">
+      <div class="loader-inner">
+        <img src="images/loader.gif" alt="loader" />
+      </div>
+    </div> -->
+
+    <?php require_once '../includes/nav.php' ?>
+
+    <!-- banner -->
+    <section>
+        <div class="banner">
+            <img src="/assets/images/banner.jpg" alt="banner" />
+        </div>
+    </section>
+
+    <!-- counter -->
+    <section class="counter">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h3 class="page-heading">Farmers</h3>
+                    <p class="page-location">
+                        Home <span>>></span> Farmers
+                    </p>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm" style="background: linear-gradient(to right, #007bff, #00c6ff); border-radius: 16px;">
+                            <div class="card-body text-white">
+                                <h5 class="mb-0 fw-semibold">Total Eligible Farmers: <span class="fs-3 fw-bold">3786</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="d-flex justify-content-center w-100">
+                    <div>
+                        <table class="table table-bordered total-table">
+                            <tr>
+                                <td>Total Farmers</td>
+                                <td>3786</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="transparent-line text-center">
+                <img src="/assets/images/line.svg" alt="line" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Submersible and Tubewell - Sansad-wise Section -->
+    <section class="container my-4">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <?php foreach ($farmers as $farmer): ?>
+                <div class="col">
+                    <div class="card border-0 shadow-sm h-100" style="background: linear-gradient(to bottom right, #f9fafb, #eef2f7); border-radius: 16px;">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h6 class="text-muted mb-2">Village</h6>
+                            <h4 class="fw-bold text-dark"><?= htmlspecialchars($farmer['village_name']) ?></h4>
+                            <div class="mt-3">
+                                <span class="badge bg-primary fs-5 p-2 px-3">
+                                    <?= htmlspecialchars($farmer['total_farmers']) ?> Farmers
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+</body>
+
+</html>
+<!-- JS here -->
+<script src="https://img1.digitallocker.gov.in/nad/v-22/assets/js/jquery.min.js"></script>
+<script src="https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0-beta1/js/ux4g.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+<script src="/assets/js/lightbox2/dist/js/lightbox.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+    });
+
+    var $affectedElements = $("*"); // Can be extended, ex. $("div, p, span.someClass")
+
+    // Storing the original size in a data attribute so size can be reset
+    $affectedElements.each(function() {
+        var $this = $(this);
+        $this.data("orig-size", $this.css("font-size"));
+    });
+
+    $("#btn-increase").click(function() {
+        changeFontSize(1);
+    });
+
+    $("#btn-decrease").click(function() {
+        changeFontSize(-1);
+    });
+
+    $("#btn-orig").click(function() {
+        $affectedElements.each(function() {
+            var $this = $(this);
+            $this.css("font-size", $this.data("orig-size"));
+        });
+    });
+
+    function changeFontSize(direction) {
+        $affectedElements.each(function() {
+            var $this = $(this);
+            $this.css("font-size", parseInt($this.css("font-size")) + direction);
+        });
+    }
+</script>

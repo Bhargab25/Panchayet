@@ -37,6 +37,7 @@ class Router
             'contact' => '../templates/contact.php',
             'member-profile' => '../templates/member-profile.php',
             'staff-profile' => '../templates/staff-profile.php',
+            'farmers' => '../templates/farmers.php',
         ];
     }
 
