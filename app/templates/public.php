@@ -73,7 +73,7 @@ $health_centers = [
     // 3. Debnibag PHC (from Image 3)
     [
         'type' => 'HWC',
-        'name' => 'Debnibag PHC',
+        'name' => 'Debnibas HWC',
         'staff' => [
             '1st_ANM' => [
                 'name' => 'Rina Pramanik'
@@ -93,7 +93,7 @@ $health_centers = [
             ['name' => 'Sabita Jana'],
             ['name' => 'Swapna Jana'],
         ],
-        'icds_worker' => [
+        'health_supervisor' => [
             ['name' => 'Manjusree Jana'],
             ['name' => 'Soma Mondal'],
             ['name' => 'Aparna Mondal'],
@@ -101,6 +101,45 @@ $health_centers = [
             ['name' => 'Chinmoyee Geri'],
             ['name' => 'Bandana Pradhan'],
             ['name' => 'Arpita Patra'],
+        ],
+    ],
+    [
+        'type' => 'HWC',
+        'name' => 'Amarabati HWC',
+        'location' => 'Freserganj PHC',
+        'staff' => [
+            '1st_ANM' => [
+                'name' => 'Lipika Pradhan',
+                'phone' => ''
+            ],
+            '2nd_ANM' => [
+                'name' => '',
+                'phone' => ''
+            ],
+            'CHO' => [
+                'name' => 'Agamoni Mandal',
+                'phone' => ''
+            ],
+        ],
+        'asha' => [
+            ['name' => 'Satabdi Sardar', 'phone' => '9775057362'],
+            ['name' => 'Archana Biswas', 'phone' => '9609394150'],
+            ['name' => 'Srabonti Das Shit', 'phone' => '8001673159'],
+            ['name' => 'Smritikana Das Gayen', 'phone' => '8145088799'],
+            ['name' => 'Shyamali Mondal', 'phone' => '8695442427'],
+            ['name' => 'Kalpana Sheet Shetty', 'phone' => '9046885989'],
+            ['name' => 'Sutapa Das Patra', 'phone' => ''],
+        ],
+        'health_supervisor' => [
+            ['name' => 'Tulasi Ani Karan'],
+            ['name' => 'Anjali Pradhan'],
+            ['name' => 'Anurupa Begani'],
+            ['name' => 'Mamata Midde Dharami'],
+            ['name' => 'Uma Rani Das Adhikari Bhunia'],
+            ['name' => 'Arati Patra Jana'],
+            ['name' => 'Anima Das'],
+            ['name' => 'Shankari Mondal'],
+            ['name' => 'Alpana Gunia Manna'],
         ],
     ],
 ];

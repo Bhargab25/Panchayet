@@ -5,37 +5,28 @@ require_once __DIR__ . '/../includes/header.php';
 require_once '../router/route.php';
 
 global $pdo;
-$stmt = $pdo->query("SELECT village_name, total_farmers FROM krishak_bandhu_farmers");
-$farmers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 
 ?>
 <style>
-    .farmer-card {
-        border-radius: 16px;
-        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-        /* Other nice combos: 
-       #ff7e5f → #feb47b OR #00c6ff → #0072ff
-    */
-        color: #fff;
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    .hover-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: linear-gradient(145deg, #f2f6fa, #ffffff);
+        border: 1px solid #e0e0e0;
+        border-radius: 1rem;
     }
 
-    .farmer-card:hover {
-        transform: translateY(-4px) scale(1.02);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    }
-    .card h4 {
-        font-size: 1.25rem;
+    .hover-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
 
-    .badge {
-        border-radius: 50px;
+    .icon-wrapper img {
+        transition: transform 0.3s ease;
     }
 
-    @media (max-width: 768px) {
-        .card h4 {
-            font-size: 1rem;
-        }
+    .hover-card:hover .icon-wrapper img {
+        transform: scale(1.1);
     }
 </style>
 
@@ -61,30 +52,11 @@ $farmers = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="container">
             <div class="row">
                 <div>
-                    <h3 class="page-heading">Farmers</h3>
+                    <h3 class="page-heading">E Tender</h3>
                     <p class="page-location">
-                        Home <span>>></span> Farmers
+                        Home <span>>></span> E Tender
                     </p>
                 </div>
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <div class="card border-0 shadow-sm" style="background: linear-gradient(to right, #007bff, #00c6ff); border-radius: 16px;">
-                            <div class="card-body text-white">
-                                <h5 class="mb-0 fw-semibold">Total Eligible Farmers: <span class="fs-3 fw-bold">3786</span></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="d-flex justify-content-center w-100">
-                    <div>
-                        <table class="table table-bordered total-table">
-                            <tr>
-                                <td>Total Farmers</td>
-                                <td>3786</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div> -->
             </div>
 
             <div class="transparent-line text-center">
@@ -95,21 +67,24 @@ $farmers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <!-- Submersible and Tubewell - Sansad-wise Section -->
     <section class="container my-4">
+        <div class="row g-4 justify-content-center">
+            <?php
+            // Example file list (adjust paths as needed)
+            $files = [
+                ['title' => '2025-26 - 15 CFC,1 st Installment', 'file' => '/assets/images/files/All_Fund_2025-26.xlsx'],
+            ];
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <?php foreach ($farmers as $farmer): ?>
-                <div class="col">
-                    <div class="card border-0 shadow-sm h-100 farmer-card">
-                        <div class="card-body d-flex flex-column justify-content-between text-white">
-                            <h6 class="mb-2 opacity-75">Village</h6>
-                            <h4 class="fw-bold"><?= htmlspecialchars($farmer['village_name']) ?></h4>
-                            <div class="mt-3">
-                                <span class="badge bg-light text-dark fs-5 p-2 px-3">
-                                    <?= htmlspecialchars($farmer['total_farmers']) ?> Farmers
-                                </span>
+            foreach ($files as $item):
+            ?>
+                <div class="col-md-4 col-lg-4 col-sm-6">
+                    <a href="<?= htmlspecialchars($item['file']) ?>" download class="text-decoration-none">
+                        <div class="card h-100 shadow-lg border-0 rounded-4 text-center p-4 hover-card">
+                            <div class="icon-wrapper mb-3">
+                                <img src="/assets/images/icons/download.gif" alt="download" width="60" />
                             </div>
+                            <h5 class="card-title mb-0 text-dark" style="font-weight: bolder;"><?= htmlspecialchars($item['title']) ?></h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
             <?php endforeach; ?>
         </div>

@@ -146,12 +146,12 @@ foreach ($schemes as $beneficiaries) {
                                 <tbody>
                                     <?php foreach ($beneficiaries as $key => $beneficiary): ?>
                                         <tr>
-                                            <td><?= $key + 1 ?></td>
-                                            <td><?= htmlspecialchars($beneficiary['name']) ?></td>
-                                            <td><?= htmlspecialchars($beneficiary['father_or_husband']) ?></td>
-                                            <td><?= htmlspecialchars($beneficiary['mouza']) ?></td>
-                                            <td><?= htmlspecialchars($beneficiary['gp']) ?></td>
-                                            <td><?= htmlspecialchars($beneficiary['phone_no']) ?></td>
+                                            <td style="font-weight:bold;"><?= $key + 1 ?></td>
+                                            <td style="font-weight:bold;"><?= htmlspecialchars($beneficiary['name']) ?></td>
+                                            <td style="font-weight:bold;"><?= htmlspecialchars($beneficiary['father_or_husband']) ?></td>
+                                            <td style="font-weight:bold;"><?= htmlspecialchars($beneficiary['mouza']) ?></td>
+                                            <td style="font-weight:bold;"><?= htmlspecialchars($beneficiary['gp']) ?></td>
+                                            <td style="font-weight:bold;"><?= htmlspecialchars($beneficiary['phone_no']) ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
