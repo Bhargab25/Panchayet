@@ -65,7 +65,7 @@
                         </a> -->
                     <a class="navbar-brand" href="<?= BASE_URL ?>/">
                         <!-- <img src="images/logo1.png" alt="logo"> -->
-                        <h4 class="fw-bold">Freserganj Gram Panchayat</h4>
+                        <h4 class="fw-bold" style="font-size: 1.5rem;">Freserganj Gram Panchayat</h4>
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -76,19 +76,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link<?= getCurrentRoute() === '' ? ' active' : '' ?>" aria-current="page"
+                                <a style="color: white;" class="nav-link<?= getCurrentRoute() === '' ? ' active' : '' ?>" aria-current="page"
                                     href="<?= BASE_URL ?>/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link<?= getCurrentRoute() === 'orders' ? ' active' : '' ?>"
+                                <a style="color: white;" class="nav-link<?= getCurrentRoute() === 'orders' ? ' active' : '' ?>"
                                     href="<?= BASE_URL ?>/orders">Orders / Circulars</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link<?= getCurrentRoute() === 'etender' ? ' active' : '' ?>"
+                                <a style="color: white;" class="nav-link<?= getCurrentRoute() === 'etender' ? ' active' : '' ?>"
                                     href="<?= BASE_URL ?>/etender">E Tender</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link<?= getCurrentRoute() === 'contact' ? ' active' : '' ?>"
+                                <a style="color: white;" class="nav-link<?= getCurrentRoute() === 'contact' ? ' active' : '' ?>"
                                     href="<?= BASE_URL ?>/contact">Contact Us</a>
                             </li>
                         </ul>

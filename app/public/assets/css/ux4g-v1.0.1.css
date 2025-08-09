@@ -97,9 +97,11 @@
      line-height: var(--bs-body-line-height);
      color: var(--bs-body-color);
      text-align: var(--bs-body-text-align);
-     background-color: var(--bs-body-bg);
+     /* background-color: var(--bs-body-bg); */
+     background-image: url("/assets/images/bg.png");
      -webkit-text-size-adjust: 100%;
      -webkit-tap-highlight-color: transparent;
+     overflow-x: hidden;
  }
  
  hr {
@@ -4128,9 +4130,12 @@
      padding-bottom: var(--bs-navbar-brand-padding-y);
      margin-right: var(--bs-navbar-brand-margin-end);
      font-size: var(--bs-navbar-brand-font-size);
-     color: var(--bs-navbar-brand-color);
+     /* color: var(--bs-navbar-brand-color); */
+     color: white;
      text-decoration: none;
+     font-weight: 800;
      white-space: nowrap;
+     font-family: 'Google Sans', sans-serif;
  }
  
  .navbar-brand:focus,

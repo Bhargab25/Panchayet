@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/header.php';
-require_once '../router/route.php'; 
+require_once '../router/route.php';
 
 // Start routing
 // route();
@@ -38,7 +38,7 @@ require_once '../router/route.php';
         </h5>
         <marquee behavior="" direction="">
           <span>
-            << Nothing to show here, please check back later. >>
+            << Nothing to show here, please check back later.>>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; << Nothing to show here, please check back later.>>
           </span>
         </marquee>
@@ -49,7 +49,7 @@ require_once '../router/route.php';
   <!-- counter -->
   <section class="counter">
     <div class="container">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12 col-sm-3">
           <div class="counter_box text-center">
             <img src="/assets/images/crowd-of-users.png" alt="icon" />
@@ -78,7 +78,12 @@ require_once '../router/route.php';
             <p>Schools</p>
           </div>
         </div>
-      </div>
+      </div> -->
+      <p style="font-size: 1rem; font-weight: 600;">
+        Freserganj Gram Panchayat, located in Namkhana block of South 24 Parganas, West Bengal, is a progressive rural administration dedicated to sustainable development, public welfare, and inclusive growth. Spanning 32.85 sq. km., it covers 17 villages and 20 wards, serving 25,142 residents in 7,125 households.</p>
+      <p style="font-size: 1rem; font-weight: 600;">We focus on infrastructure development, quality education, public health services, safe drinking water access, and livelihood promotion. With primary, junior high, and high schools, child education centers, and healthcare facilities, we strive to meet community needs while empowering residents.</p>
+      <p style="font-size: 1rem; font-weight: 600;">Guided by transparency, good governance, and active community participation, Freserganj Gram Panchayat works towards building a self-reliant, healthy, and prosperous rural society—ensuring that every citizen benefits from growth and opportunities.</p>
+      </p>
       <div class="transparent-line text-center">
         <img src="/assets/images/line.svg" alt="line" />
       </div>
@@ -620,25 +625,25 @@ require_once '../router/route.php';
                   <div class="carousel-item active">
                     <div class="row mb-20">
                       <div class="col-sm-6">
-                        <img class="w-100" src="/assets/images/gallery/community/Community.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community.jpeg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                       <div class="col-sm-6">
-                        <img class="w-100" src="/assets/images/gallery/community/Community2.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community2.jpeg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/community/Community3.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community3.jpeg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/community/Community4.avif" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community4.jpeg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/community/Community5.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community5.jpeg" alt="img"
                           loading="lazy" />
                       </div>
                     </div>
@@ -646,21 +651,21 @@ require_once '../router/route.php';
                   <div class="carousel-item">
                     <div class="row mb-20">
                       <div class="col-sm-6">
-                        <img class="w-100" src="/assets/images/gallery/community/Community6.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community6.jpeg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                       <div class="col-sm-6">
-                        <img class="w-100" src="/assets/images/gallery/community/Community7.png" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community7.jpeg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/community/Community.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community8.jpeg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/community/Community2.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community9.jpeg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
@@ -831,10 +836,10 @@ require_once '../router/route.php';
 <script src="/assets/js/lightbox2/dist/js/lightbox.js"></script>
 
 <script>
-  $(document).ready(function () {
+  $(document).ready(function() {
     $(".banner").slick({
       dots: false,
-      arrows: true,
+      arrows: false,
       infinite: true,
       autoplay: true,
       autoplaySpeed: 3000,
@@ -854,8 +859,7 @@ require_once '../router/route.php';
       slidesToScroll: 1,
       arrows: true,
 
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
@@ -885,8 +889,9 @@ require_once '../router/route.php';
 <!-- Google Translate Code -->
 <script type="text/javascript">
   function googleTranslateElementInit() {
-    new google.translate.TranslateElement(
-      { pageLanguage: "en" },
+    new google.translate.TranslateElement({
+        pageLanguage: "en"
+      },
       "google_translate_element"
     );
   }
@@ -900,28 +905,28 @@ require_once '../router/route.php';
   var $affectedElements = $("*"); // Can be extended, ex. $("div, p, span.someClass")
 
   // Storing the original size in a data attribute so size can be reset
-  $affectedElements.each(function () {
+  $affectedElements.each(function() {
     var $this = $(this);
     $this.data("orig-size", $this.css("font-size"));
   });
 
-  $("#btn-increase").click(function () {
+  $("#btn-increase").click(function() {
     changeFontSize(1);
   });
 
-  $("#btn-decrease").click(function () {
+  $("#btn-decrease").click(function() {
     changeFontSize(-1);
   });
 
-  $("#btn-orig").click(function () {
-    $affectedElements.each(function () {
+  $("#btn-orig").click(function() {
+    $affectedElements.each(function() {
       var $this = $(this);
       $this.css("font-size", $this.data("orig-size"));
     });
   });
 
   function changeFontSize(direction) {
-    $affectedElements.each(function () {
+    $affectedElements.each(function() {
       var $this = $(this);
       $this.css("font-size", parseInt($this.css("font-size")) + direction);
     });

@@ -66,6 +66,17 @@
   padding: 15px;
   gap: 10px;
   cursor: pointer;
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   a {
     all: unset;
@@ -127,7 +138,18 @@
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
-  background: white;
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,11 +177,12 @@
 
 .flip-card-back {
   transform: rotateY(180deg);
-  background: #f1f1f1;
+  background: #0e0c8b;
+  color: white;
 }
 
 @media (max-width: 768px) {
-  body{
+  body {
     overflow-x: hidden;
   }
   .banner {
@@ -209,12 +232,12 @@
   font-size: 1rem;
   margin-bottom: 20px;
 
-  span{
+  span {
     padding-inline: 20px;
   }
 }
-.total-table{
-  td{
+.total-table {
+  td {
     background: rgb(3, 3, 66) !important;
     color: white;
     padding-inline: 30px;
