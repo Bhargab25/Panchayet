@@ -173,33 +173,31 @@ require_once '../router/route.php';
   <section class="about">
     <div class="container">
       <div class="row scheme">
-        <div class="scheme-item">
+        <div class="scheme-item cards" data-url="/grievance">
           <img src="/assets/images/promotion.png" alt="" />
-          <a href="">
             <p>Lodge Your Grievance</p>
-          </a>
         </div>
-        <div class="scheme-item">
+        <div class="scheme-item cards" data-url="/tourism">
           <img src="/assets/images/destination.png" alt="" />
-          <p>Tourism</p>
+            <p>Tourism</p>
         </div>
-        <div class="scheme-item">
+        <div class="scheme-item cards" data-url="/helpdesk">
           <img src="/assets/images/customer-service.png" alt="" />
           <p>Helpdesk</p>
         </div>
-        <div class="scheme-item">
+        <div class="scheme-item cards" data-url="/meeting">
           <img src="/assets/images/meeting.png" alt="" />
           <p>Meeting</p>
         </div>
-        <div class="scheme-item">
+        <div class="scheme-item cards" data-url="/asset">
           <img src="/assets/images/asset.png" alt="" />
           <p>Asset management</p>
         </div>
-        <div class="scheme-item">
+        <div class="scheme-item cards" data-url="/property-tax">
           <img src="/assets/images/property-tax.png" alt="" />
           <p>Online property tax</p>
         </div>
-        <div class="scheme-item">
+        <div class="scheme-item cards" data-url="/public-health">
           <img src="/assets/images/public-health.png" alt="" />
           <p>Public health</p>
         </div>
@@ -217,7 +215,7 @@ require_once '../router/route.php';
         <div class="row">
           <div class="col-sm-5">
             <div class="card-modi-ji">
-              <img src="/assets/images/280x280.png" alt="modi ji" />
+              <img src="/assets/images/default-profile.png" alt="modi ji" width="280px" height="280px" style="border-radius: 100%;" />
               <p>G.P. Pradhan</p>
               <h3>Kasinath Jana</h3>
               <div class="pmg-social d-flex gap-2 align-items-center justify-content-center mt-20">
@@ -231,7 +229,7 @@ require_once '../router/route.php';
           <div class="col-sm-7">
             <div class="pmg-team">
               <div class="pmg-team-content d-flex gap-3 align-items-center">
-                <img src="/assets/images/156x156.png" alt="name" />
+                <img src="/assets/images/default-profile.png" alt="name" width="156px" height="156px" style="border-radius: 100%;" />
                 <div class="pmg-team-title ashwini-ji">
                   <p>Upa-Pradhan</p>
                   <h3>Kanika Khan Mondal</h3>
@@ -239,7 +237,7 @@ require_once '../router/route.php';
               </div>
 
               <div class="pmg-team-content d-flex flex-column align-items-center">
-                <img src="/assets/images/120x120.png" alt="name" />
+                <img src="/assets/images/default-profile.png" alt="name" width="120px" height="120px" style="border-radius: 100%;" />
                 <div class="pmg-team-title minister-ji text-center">
                   <p>Member</p>
                   <h3>Dipak Kumar Das</h3>
@@ -247,7 +245,7 @@ require_once '../router/route.php';
               </div>
 
               <div class="pmg-team-content d-flex flex-column align-items-center">
-                <img src="/assets/images/120x120.png" alt="name" />
+                <img src="/assets/images/default-profile.png" alt="name" width="120px" height="120px" style="border-radius: 100%;" />
                 <div class="pmg-team-title minister-ji text-center">
                   <p>MEMBER</p>
                   <h3>Ranajet Barman</h3>
@@ -265,46 +263,6 @@ require_once '../router/route.php';
   <section class="services-panel glass-card">
     <div class="container">
       <h2 class="section-heading mb-20">Public Information & Resources</h2>
-
-      <!-- tab services -->
-      <!-- <div class="services-tab">
-          <ul
-            class="nav nav-tabs border-bottom-0 d-flex align-items-center justify-content-center"
-            style="margin-bottom: 60px"
-            role="tablist"
-          >
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="nav-accordion-one-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-accordion-one"
-                type="button"
-                role="tab"
-                aria-controls="nav-accordion-one"
-                aria-selected="false"
-                tabindex="-1"
-              >
-                Public Records & Welfare Data
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="nav-accordion-two-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-accordion-two"
-                type="button"
-                role="tab"
-                aria-controls="nav-accordion-two"
-                aria-selected="true"
-              >
-                Panchayat Members & Contacts
-              </button>
-            </li>
-          </ul>
-        </div> -->
-      <!-- tab -->
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade faqPage active show" id="nav-accordion-one" role="tabpanel"
           aria-labelledby="nav-accordion-one-tab">
@@ -317,8 +275,8 @@ require_once '../router/route.php';
                     <h3>PMAY-G</h3>
                   </div>
                   <div class="flip-card-back service-card" data-url="pmayg.html">
-                    <p>Houses Completed</p>
-                    <h3>0</h3>
+                    <p>Comming Soon</p>
+                    <h3></h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -333,8 +291,8 @@ require_once '../router/route.php';
                     <h3>15th Finance Commission</h3>
                   </div>
                   <div class="flip-card-back service-card" data-url="15th-finance.html">
-                    <p>Total beneficiary</p>
-                    <h3>0</h3>
+                    <p>Comming Soon</p>
+                    <h3></h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -349,8 +307,8 @@ require_once '../router/route.php';
                     <h3>MGNREGA</h3>
                   </div>
                   <div class="flip-card-back service-card">
-                    <p>Total beneficiary</p>
-                    <h3>0</h3>
+                    <p>Comming Soon</p>
+                    <h3></h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -365,8 +323,8 @@ require_once '../router/route.php';
                     <h3>5th FC</h3>
                   </div>
                   <div class="flip-card-back service-card">
-                    <p>Total beneficiary</p>
-                    <h3>0</h3>
+                    <p>Comming Soon</p>
+                    <h3></h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -380,7 +338,7 @@ require_once '../router/route.php';
                     <img src="/assets/images/social-care.png" alt="icon" loading="lazy" />
                     <h3>Public distribution system</h3>
                   </div>
-                  <div class="flip-card-back service-card">
+                  <div class="flip-card-back service-card" data-url="<?= BASE_URL ?>/pds">
                     <p>Total beneficiary</p>
                     <h3>0</h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
@@ -396,9 +354,9 @@ require_once '../router/route.php';
                     <img src="/assets/images/social-care.png" alt="icon" loading="lazy" />
                     <h3>Community toilet & Burning ghat</h3>
                   </div>
-                  <div class="flip-card-back service-card">
-                    <p>Total beneficiary</p>
-                    <h3>0</h3>
+                  <div class="flip-card-back service-card" data-url="<?= BASE_URL ?>/Community_toilet">
+                    <p>Total</p>
+                    <h3>10</h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -413,8 +371,8 @@ require_once '../router/route.php';
                     <h3>Bina mulya samajik suraksha yojana (pmssy)</h3>
                   </div>
                   <div class="flip-card-back service-card">
-                    <p>Total beneficiary</p>
-                    <h3>0</h3>
+                    <p>Cooming Soon</p>
+                    <h3></h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -429,8 +387,8 @@ require_once '../router/route.php';
                     <h3>Social security</h3>
                   </div>
                   <div class="flip-card-back service-card">
-                    <p>Total beneficiary</p>
-                    <h3>0</h3>
+                    <p>Comming Soon</p>
+                    <h3></h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -460,9 +418,9 @@ require_once '../router/route.php';
                     <img src="/assets/images/social-security.png" alt="icon" loading="lazy" />
                     <h3>SC, ST & OBC Certificate</h3>
                   </div>
-                  <div class="flip-card-back service-card">
-                    <p>Total beneficiary</p>
-                    <h3>0</h3>
+                  <div class="flip-card-back service-card" data-url="<?= BASE_URL ?>/cast">
+                    <p>Total Inquiry</p>
+                    <h3>173</h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
                   </div>
                 </div>
@@ -508,7 +466,7 @@ require_once '../router/route.php';
                     <img src="/assets/images/group.png" alt="icon" loading="lazy" />
                     <h3>Pradhan-&-Upapradhan</h3>
                   </div>
-                  <div class="flip-card-back service-card">
+                  <div class="flip-card-back service-card" data-url="<?= BASE_URL ?>/pradhan-upapradhan">
                     <p>Upto</p>
                     <h3>2025</h3>
                     <img src="/assets/images/next1.png" alt="" width="40px" class="flip-next" />
@@ -852,9 +810,9 @@ require_once '../router/route.php';
       dots: false,
       arrows: true,
       infinite: true,
-      //autoplay: true,
-      //autoplaySpeed: 3000,
-      //speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      speed: 1000,
       slidesToShow: 5,
       slidesToScroll: 1,
       arrows: true,
@@ -879,6 +837,13 @@ require_once '../router/route.php';
   });
 
   document.querySelectorAll(".flip-card-back").forEach((card) => {
+    card.addEventListener("click", () => {
+      const url = card.getAttribute("data-url");
+      if (url) window.location.href = url;
+    });
+  });
+
+  document.querySelectorAll(".cards").forEach((card) => {
     card.addEventListener("click", () => {
       const url = card.getAttribute("data-url");
       if (url) window.location.href = url;

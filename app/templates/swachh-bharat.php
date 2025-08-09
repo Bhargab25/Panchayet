@@ -107,8 +107,104 @@ try {
             <div class="col-12">
                 <div class="card shadow rounded-4 p-4 border-0">
                     <h4 class="mb-4 text-center">View all Project Under Swachh Bharat Mission</h4>
+                    <div class="row g-4 justify-content-center">
+                        <?php
+                        // Example file list (adjust paths as needed)
+                        $files = [
+                            ['title' => 'Click here to view', 'file' => '/assets/images/files/Freserganj_SBM.pdf'],
+                        ];
+
+                        foreach ($files as $item):
+                        ?>
+                            <div class="col-md-4 col-lg-4 col-sm-6">
+                                <a href="<?= htmlspecialchars($item['file']) ?>" download class="text-decoration-none">
+                                    <div class="card h-100 shadow-lg border-0 rounded-4 text-center p-4 hover-card">
+                                        <div class="icon-wrapper mb-3">
+                                            <img src="/assets/images/icons/download.gif" alt="download" width="60" />
+                                        </div>
+                                        <h5 class="card-title mb-0 text-dark" style="font-weight: bolder;"><?= htmlspecialchars($item['title']) ?></h5>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="card shadow rounded-4 p-4 border-0">
+                    <h4 class="mb-4 text-center">WB Rural Sanitation Monitoring System</h4>
                     <div class="table-responsive">
-                        
+                        <table id="electorTable" class="table table-hover table-striped table-bordered">
+                            <thead class="table-dark text-white">
+                                <tr>
+                                    <th>Sl. No</th>
+                                    <th>Gram Panchayat (Mouza)</th>
+                                    <th>DPR Cost (SBMG)</th>
+                                    <th>No of project completed (as per WB Rural Sanitation)</th>
+                                    <th>Mouza wish capping (in Rs)</th>
+                                    <th>Project completion amount (as per WB Rural Sanitation)</th>
+                                    <th>Mouza wish capping in hand (in Rs)</th>
+                                    <th>Expenditure Vs Capping (in %)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>AMRABATI</td>
+                                    <td>3,750,660</td>
+                                    <td>60</td>
+                                    <td>3,750,660</td>
+                                    <td>481,613</td>
+                                    <td>3,274,447</td>
+                                    <td>12.82</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>BIJAYBATI</td>
+                                    <td>2,752,134</td>
+                                    <td>58</td>
+                                    <td>2,752,134</td>
+                                    <td>395,389</td>
+                                    <td>2,356,745</td>
+                                    <td>14.37</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>DEBNIBAS</td>
+                                    <td>647,192</td>
+                                    <td>55</td>
+                                    <td>647,192</td>
+                                    <td>386,799</td>
+                                    <td>260,393</td>
+                                    <td>59.77</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>LAKSHMIPUR ABAD</td>
+                                    <td>280,672</td>
+                                    <td>6</td>
+                                    <td>280,672</td>
+                                    <td>45,425</td>
+                                    <td>235,247</td>
+                                    <td>16.18</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>SHIBPUR</td>
+                                    <td>3,527,832</td>
+                                    <td>49</td>
+                                    <td>3,527,832</td>
+                                    <td>440,573</td>
+                                    <td>3,087,259</td>
+                                    <td>12.49</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

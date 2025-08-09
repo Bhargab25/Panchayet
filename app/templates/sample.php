@@ -31,9 +31,9 @@ global $pdo;
         <div class="container">
             <div class="row">
                 <div>
-                    <h3 class="page-heading">Drinking water</h3>
+                    <h3 class="page-heading"></h3>
                     <p class="page-location">
-                        Home <span>>></span> Drinking water
+                        Home <span>>></span> 
                     </p>
                 </div>
 
@@ -41,15 +41,15 @@ global $pdo;
                     <div>
                         <table class="table table-bordered total-table">
                             <tr>
-                                <td>Total Tubewell</td>
-                                <td>303</td>
+                                <td>Total</td>
+                                <td>0</td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div>
-                    <p class="text-center mb-3">
-                        As part of our ongoing commitment to improving rural infrastructure, this project ensures access to safe and clean drinking water for every household in the community. With 303 tubewells installed across various locations, we aim to reduce water scarcity, prevent waterborne diseases, and promote better health and hygiene. This initiative not only enhances daily life but also empowers local families by securing one of the most basic human needs—clean water.
+                    <p class="text-center mb-3" style="font-size: 2rem;">
+                        Comming Soon...
                     </p>
                 </div>
             </div>
