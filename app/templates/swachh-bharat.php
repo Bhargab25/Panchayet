@@ -16,7 +16,7 @@ try {
 }
 ?>
 
-<body>
+<body class="bg">
     <!-- Loader -->
     <!-- <div class="loader">
       <div class="loader-inner">
@@ -29,12 +29,12 @@ try {
     <!-- banner -->
     <section>
         <div class="banner">
-            <img src="/assets/images/banner.jpg" alt="banner" />
+            <img src="/assets/images/banner/banner_5.png" alt="banner" />
         </div>
     </section>
 
     <!-- counter -->
-    <section class="counter">
+    <section class="counter glass-card">
         <div class="container">
             <div class="row">
                 <div>
@@ -95,6 +95,20 @@ try {
                                 <?php endif ?>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="card shadow rounded-4 p-4 border-0">
+                    <h4 class="mb-4 text-center">View all Project Under Swachh Bharat Mission</h4>
+                    <div class="table-responsive">
+                        
                     </div>
                 </div>
             </div>

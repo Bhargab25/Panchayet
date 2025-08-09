@@ -103,6 +103,10 @@
      -webkit-tap-highlight-color: transparent;
      overflow-x: hidden;
  }
+
+ .bg{
+    background-image: url("/assets/images/bg2.webp") !important;
+  }
  
  hr {
      margin: 1rem 0;

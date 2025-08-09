@@ -47,7 +47,7 @@ require_once '../router/route.php';
   </section>
 
   <!-- counter -->
-  <section class="counter">
+  <section class="counter glass-card">
     <div class="container">
       <!-- <div class="row">
         <div class="col-12 col-sm-3">
@@ -262,7 +262,7 @@ require_once '../router/route.php';
 
   <!-- our service -->
 
-  <section class="services-panel">
+  <section class="services-panel glass-card">
     <div class="container">
       <h2 class="section-heading mb-20">Public Information & Resources</h2>
 
@@ -708,21 +708,21 @@ require_once '../router/route.php';
                   <div class="carousel-item active">
                     <div class="row mb-20">
                       <div class="col-sm-6">
-                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights.jpeg" alt="img"
                           width="618px" height="332px" loading="lazy" style="height: 332px" />
                       </div>
                       <div class="col-sm-6">
-                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights2.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights2.jpeg" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights3.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights3.jpeg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights4.jpg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/highlights/Highlights4.jpeg" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
@@ -776,7 +776,7 @@ require_once '../router/route.php';
   </section>
 
   <!-- social media section -->
-  <section class="social_media_main">
+  <section class="social_media_main glass-card">
     <img src="/assets/images/icons/right-circle.svg" alt="circle" loading="lazy" class="left-circle" />
     <div class="container">
       <div class="social_media">

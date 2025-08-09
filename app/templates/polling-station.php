@@ -16,7 +16,7 @@ try {
 }
 ?>
 
-<body>
+<body class="bg">
     <!-- Loader -->
     <!-- <div class="loader">
       <div class="loader-inner">
@@ -29,12 +29,12 @@ try {
     <!-- banner -->
     <section>
         <div class="banner">
-            <img src="/assets/images/banner.jpg" alt="banner" />
+            <img src="/assets/images/banner/banner_5.png" alt="banner" />
         </div>
     </section>
 
     <!-- counter -->
-    <section class="counter">
+    <section class="counter glass-card">
         <div class="container">
             <div class="row">
                 <div>

@@ -30,7 +30,7 @@ global $pdo;
     }
 </style>
 
-<body>
+<body class="bg">
     <!-- Loader -->
     <!-- <div class="loader">
       <div class="loader-inner">
@@ -43,12 +43,12 @@ global $pdo;
     <!-- banner -->
     <section>
         <div class="banner">
-            <img src="/assets/images/banner.jpg" alt="banner" />
+            <img src="/assets/images/banner/banner_5.png" alt="banner" />
         </div>
     </section>
 
     <!-- counter -->
-    <section class="counter">
+    <section class="counter glass-card">
         <div class="container">
             <div class="row">
                 <div>
