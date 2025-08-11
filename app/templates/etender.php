@@ -43,7 +43,7 @@ global $pdo;
     <!-- banner -->
     <section>
         <div class="banner">
-            <img src="/assets/images/banner.jpg" alt="banner" />
+            <img src="/assets/images/banner/banner_8.png" alt="banner" />
         </div>
     </section>
 

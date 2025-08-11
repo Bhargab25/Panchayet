@@ -43,7 +43,7 @@ class Router
             'pradhan-upapradhan' => '../templates/pradhan-upapradhan.php',
             'pds' => '../templates/pds.php',
             'grievance' => '../templates/sample.php',
-            'tourism' => '../templates/sample.php',
+            'tourism' => '../templates/tourism.php',
             'helpdesk' => '../templates/sample.php',
             'meeting' => '../templates/sample.php',
             'asset' => '../templates/sample.php',

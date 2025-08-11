@@ -24,6 +24,7 @@ $farmers = $stmt->fetchAll(PDO::FETCH_ASSOC);
         transform: translateY(-4px) scale(1.02);
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
+
     .card h4 {
         font-size: 1.25rem;
     }
@@ -57,7 +58,7 @@ $farmers = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </section>
 
     <!-- counter -->
-    <section class="counter">
+    <section class="counter glass-card">
         <div class="container">
             <div class="row">
                 <div>
@@ -68,9 +69,10 @@ $farmers = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </div>
                 <div class="row mb-4">
                     <div class="col-12">
-                        <div class="card border-0 shadow-sm" style="background: linear-gradient(to right, #007bff, #00c6ff); border-radius: 16px;">
+                        <div class="card border-0 shadow-sm text-center" style="background: linear-gradient(to right, #007bff, #00c6ff); border-radius: 16px;">
                             <div class="card-body text-white">
-                                <h5 class="mb-0 fw-semibold">Total Eligible Farmers: <span class="fs-3 fw-bold">3786</span></h5>
+                                <h5 class="mb-0 fw-semibold">Krishak Bandhu farmers data in Freserganj GP</h5>
+                                <h5><span class="fs-3 fw-bold">3786</span></h5>
                             </div>
                         </div>
                     </div>

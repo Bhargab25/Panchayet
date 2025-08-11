@@ -28,6 +28,17 @@ global $pdo;
     .hover-card:hover .icon-wrapper img {
         transform: scale(1.1);
     }
+    .hover-zoom img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 6px;
+    }
+
+    .hover-zoom:hover img {
+        transform: scale(1.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        border: 5px solid #007bff;
+        /* Optional blue border */
+    }
 </style>
 
 <body class="bg">
@@ -61,6 +72,27 @@ global $pdo;
 
             <div class="transparent-line text-center">
                 <img src="/assets/images/line.svg" alt="line" />
+            </div>
+        </div>
+
+        <div class="row">
+             <p class="text-center" style="font-size: 1rem; font-weight: bold;">দীর্ঘ দিনের প্রতীক্ষার অবসান, স্লুইস গেট নির্মাণ ( সংসদ নম্বর - ৫ )</p>
+            <div class="col-md-12">
+                <div class="text-center">
+                    <img src="/assets/images/line.svg" alt="line" />
+                </div>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-md-4 mb-2 hover-zoom mx-1">
+                        <a href="/assets/images/tubewell/sGate.webp" data-lightbox="image-3" data-title="Sluice Gate">
+                            <img style="width: 400px; height: 400px; object-fit: cover;" src="/assets/images/tubewell/sGate.webp" alt="Sluice Gate">
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-2 hover-zoom mx-1">
+                        <a href="/assets/images/tubewell/sGate_2.webp" data-lightbox="image-2" data-title="Sluice Gate">
+                            <img style="width: 400px; height: 400px; object-fit: cover;" src="/assets/images/tubewell/sGate_2.webp" alt="Sluice Gate">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

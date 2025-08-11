@@ -23,7 +23,7 @@ require_once '../router/route.php';
   <section>
     <div class="banner">
       <img src="/assets/images/banner/banner_1.png" alt="banner" />
-      <img src="/assets/images/banner/banner_3.png" alt="banner" />
+      <img src="/assets/images/banner/banner_7.png" alt="banner" />
       <img src="/assets/images/banner/banner.png" alt="banner" />
       <img src="/assets/images/banner/banner_2.png" alt="banner" />
     </div>
@@ -38,8 +38,11 @@ require_once '../router/route.php';
         </h5>
         <marquee behavior="" direction="">
           <span>
-            << Nothing to show here, please check back later.>>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; << Nothing to show here, please check back later.>>
+            << বকেয়া ভূমি ও গৃহকর আজই কর আদায়কারীর কাছে জমা দিন। আপনার 
+ব্যবসা গ্রাম পঞ্চায়েতে রেজিষ্ট্রেশন করুন, বিনা রেজিষ্ট্রেশনে ব্যবসা করা অবৈধ, বাড়ি 
+তৈরির আগে গ্রাম পঞ্চায়েত থেকে বাড়ির নকশা অনুমোদন করুন, আপনার দেওয়া 
+করের অর্থ এলাকার উন্নয়নে ব্যয় হবে।>>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </span>
         </marquee>
       </div>
@@ -193,7 +196,7 @@ require_once '../router/route.php';
           <img src="/assets/images/asset.png" alt="" />
           <p>Asset management</p>
         </div>
-        <div class="scheme-item cards" data-url="/property-tax">
+        <div class="scheme-item cards" data-url="https://prdtax.wb.gov.in/">
           <img src="/assets/images/property-tax.png" alt="" />
           <p>Online property tax</p>
         </div>
@@ -583,11 +586,11 @@ require_once '../router/route.php';
                   <div class="carousel-item active">
                     <div class="row mb-20">
                       <div class="col-sm-6">
-                        <img class="w-100" src="/assets/images/gallery/community/Community.jpeg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/activity_12.webp" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                       <div class="col-sm-6">
-                        <img class="w-100" src="/assets/images/gallery/community/Community2.jpeg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/activity_14.webp" alt="img"
                           loading="lazy" style="height: 332px" />
                       </div>
                     </div>
@@ -597,7 +600,7 @@ require_once '../router/route.php';
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/community/Community4.jpeg" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/activity_13.webp" alt="img"
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
@@ -627,7 +630,7 @@ require_once '../router/route.php';
                           loading="lazy" />
                       </div>
                       <div class="col-sm-4">
-                        <img class="w-100" src="/assets/images/gallery/community/Community3.webp" alt="img"
+                        <img class="w-100" src="/assets/images/gallery/community/Community.jpeg" alt="img"
                           loading="lazy" />
                       </div>
                     </div>

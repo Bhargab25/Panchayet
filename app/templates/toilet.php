@@ -15,7 +15,19 @@ try {
     error_log("Database query failed: " . $e->getMessage());
 }
 ?>
+<style>
+    .hover-zoom img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 6px;
+    }
 
+    .hover-zoom:hover img {
+        transform: scale(1.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        border: 5px solid #007bff;
+        /* Optional blue border */
+    }
+</style>
 <body class="bg">
     <!-- Loader -->
     <!-- <div class="loader">
@@ -95,6 +107,20 @@ try {
                                 <?php endif ?>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <img src="/assets/images/line.svg" alt="line" />
+                </div>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-md-4 mb-2 hover-zoom mx-1">
+                        <a href="/assets/images/tubewell/toilet.webp" data-lightbox="image-3" data-title="Community Toilet">
+                            <img src="/assets/images/tubewell/toilet.webp" alt="Community Toilet" width="100%">
+                        </a>
                     </div>
                 </div>
             </div>
