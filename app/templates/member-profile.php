@@ -58,9 +58,9 @@ $total_members = count($members);
     }
 
     .gp-member-img {
-        width: 88px;
-        height: 88px;
-        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        border-radius: 18px;
         object-fit: cover;
         margin-bottom: 14px;
         border: 3.5px solid #e5e9ea;
@@ -147,7 +147,7 @@ $total_members = count($members);
                         <div class="gp-member-card shadow-sm h-100 py-4 text-center">
                             <?php
                             $imgBase = '/assets/images/members/' . $member['sd_no'];
-                            $imgPath = file_exists($_SERVER['DOCUMENT_ROOT'] . $imgBase . '.jpg') ? $imgBase . '.jpg'
+                            $imgPath = file_exists($_SERVER['DOCUMENT_ROOT'] . $imgBase . '.webp') ? $imgBase . '.webp'
                                 : (file_exists($_SERVER['DOCUMENT_ROOT'] . $imgBase . '.png') ? $imgBase . '.png'
                                     : '/assets/images/default-profile.png');
                             ?>

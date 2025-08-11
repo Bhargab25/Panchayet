@@ -215,7 +215,7 @@ require_once '../router/route.php';
         <div class="row">
           <div class="col-sm-5">
             <div class="card-modi-ji">
-              <img src="/assets/images/default-profile.png" alt="modi ji" width="280px" height="280px" style="border-radius: 100%;" />
+              <img src="/assets/images/members/5.webp" alt="Kasinath Jana" width="280px" height="280px" style="border-radius: 100%; object-fit: fill; width: 280px; height: 280px;" />
               <p>G.P. Pradhan</p>
               <h3>Kasinath Jana</h3>
               <div class="pmg-social d-flex gap-2 align-items-center justify-content-center mt-20">
@@ -229,7 +229,7 @@ require_once '../router/route.php';
           <div class="col-sm-7">
             <div class="pmg-team">
               <div class="pmg-team-content d-flex gap-3 align-items-center">
-                <img src="/assets/images/default-profile.png" alt="name" width="156px" height="156px" style="border-radius: 100%;" />
+                <img src="/assets/images/members/2.webp" alt="Kanika Khan Mondal" width="156px" height="156px" style="border-radius: 100%;" />
                 <div class="pmg-team-title ashwini-ji">
                   <p>Upa-Pradhan</p>
                   <h3>Kanika Khan Mondal</h3>
@@ -237,15 +237,15 @@ require_once '../router/route.php';
               </div>
 
               <div class="pmg-team-content d-flex flex-column align-items-center">
-                <img src="/assets/images/default-profile.png" alt="name" width="120px" height="120px" style="border-radius: 100%;" />
+                <img src="/assets/images/members/executive.webp" alt="Dipak Kumar Das" width="120px" height="120px" style="border-radius: 100%; width: 120px; height: 120px;" />
                 <div class="pmg-team-title minister-ji text-center">
-                  <p>Member</p>
+                  <p>Executive assistant</p>
                   <h3>Dipak Kumar Das</h3>
                 </div>
               </div>
 
               <div class="pmg-team-content d-flex flex-column align-items-center">
-                <img src="/assets/images/default-profile.png" alt="name" width="120px" height="120px" style="border-radius: 100%;" />
+                <img src="/assets/images/default-profile.png" alt="Ranajet Barman" width="120px" height="120px" style="border-radius: 100%;" />
                 <div class="pmg-team-title minister-ji text-center">
                   <p>MEMBER</p>
                   <h3>Ranajet Barman</h3>
